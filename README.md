@@ -7,12 +7,13 @@ The outline of the course is the following:
 [Foundations of data management](./SPSS_md_1_chapter.md)
 1. Using existing SPSS datasets
 2. SPSS interface exploration:
-Data view  
-Variable view: types of variables, labels, values  
+> Data view  
+> Variable view: types of variables, labels, values  
 3. Importing data: CSV and Excel
 4. Adjusting CSV/Excel formats to SPSS (variable management)
 5. Recoding variables
 6. Computing variables
+
 Data Exploration  
 1. Data exploration for categorical variables (frequencies + bar charts)
 2. Data exploration for continuous variables (descriptives + box plots)
