@@ -52,22 +52,26 @@ Let's now click on "Variable View" at the bottom of this window and explore it. 
 > This is where you would store an elaborate description of what this variable contains. 
 6. **Values** - all possible values that this variable can take
 > This parameter is used for categorical variables. If you double-click the values box for a variable you will see a button with 3 dots:
-![values button](./img/values.png)
+![values button](./img/values.png)  
 > After clicking on this button you will see a new window. In this window you can create new values for a categorical variable. For instance, you can create a variable that records whether a person is left or rigt-handed. You would create a value 1 and label it as "right-handed" and value 2 and label it as "left-handed". To do that you will need to create a value and a corresponding value in the window that opened and click "Add".
 7. **Missing** - the codes for missing values (for instance, people can code 997 as a rejection to answer and 999 no answer.)
 9. **Columns** - the width of each column in the Data View window
 10. **Allign** - the allignemnt of cells' content
-11. **Measure** - a type of measurment that variable uses, can be Scale, Ordinal and Nominal
-> This is one of the key parameters of a variable that defines how SPSS will treat this variable. There are three types of varibales used in SPSS:
-> 1. **Scale** Scale varibales 
-> 2. **Ordinal** An ordidinal variable implies creating seprate categories that are somehow ordered/ranked. For instance, if you have 
+11. **Measure** - a type of measurment that variable uses, can be Scale, Ordinal and Nominal 
+> This is one of the key parameters of a variable that defines how SPSS will treat it. Failing to correctly identify a type of measurment can result in wrong calculations. There are three types of varibales used in SPSS:
+> 1. **Scale** Scale varibales or so called interval variables imply that there is an interval and a variable can take any value in this interval. For instance, temperature or age. You can be 30 years old, you can be 30,5 years old, but also it is definetely possible that you are 30.003 years old. Same applies to temperature, height, years of education and so on. 
+> 2. **Ordinal** An ordidinal variable implies creating seprate categories that are somehow **ordered/ranked**. For instance, if you have a variable that stores people's highest achieved level of education, where 1 is High School, 2 is a Bachelor's degree and 3 is a Master's degree. They are all ranked: each one is higher than the next one. 
 > 3. **Nominal** A nominal variable implies creating categories that are **NOT** in any way **ranked**. For instance, right and left handed people are two categories. These categories do not have any order/hiearchy. 
 12. **Role** - the role of the variable in your analysis
 
 
 ### Challenge 1: reating variables
 
+Now it's time for your first challenge! Go to the **Variable View** and create 3 variables (to do it simply scroll down all the variables and click on the first empty row in **Variable View**):
 
+1. **Name**: height, **Label**: Person's height, **Values**: None (as it's a scale variable), **Measure**: Scale (To change the Measure, simply click on the corresponding cell)
+2. **Name**: plane_class, **Label**: Plane ticket class, **Values**: 1-First, 2-Second, 3-Third, **Measure**: Ordinal
+3. **Name**: fav_col, **Label**: Favorite colour, **Values**: 1-Red, 2-Green, 3-Blue, **Measure**: Nominal
 
 
 ### Importing data from CSV and Excel
