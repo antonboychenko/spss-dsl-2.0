@@ -131,6 +131,10 @@ We will be working with a variable called `agea` (Age of respondent...). Find an
 
 ![moved variable](./img/moved_var.png)
 
+![age group 1](./img/age_group_1.png)
 
+![age group 2](./img/age_group_2.png)
+
+![age group 3](./img/age_group_3.png)
 
 ![output window](./img/output.png)
