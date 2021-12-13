@@ -110,7 +110,6 @@ As your second task:
 3. Add labels to your variables, namely  "Respondent's salary", "Age of a respondent",  and "Gender" to corresponding variables
 4. For the gender variables add values: 1 - Male, 2 - Female, 3 - Other (specified)
 
-
 ---
 
 
@@ -131,10 +130,41 @@ We will be working with a variable called `agea` (Age of respondent...). Find an
 
 ![moved variable](./img/moved_var.png)
 
+As you can see, it now shows `agea ---> ?` which means that SPSS wants you to name a new variable with recoded values. In order to do that provide it with a new name in the `Name` box in the `Output variable area` on the right. Let's call it `age_re` and give it a label of "Age groups". Don't forget to click **Change** once you have given all the details of the new variable. Now all the recoded values will be stored in `age_re`.
+
+Now it's time for the actual recoding. CLick on the **Old and New Values...** button to create recoding rules. Once you clicked it you will see a new window. In this window we can create rules for recoding. First, let's create group 1 that are aged 30 and below. For that let's set these settings here:
+
 ![age group 1](./img/age_group_1.png)
+
+Once you inputed the values, find the **Add** button and click it. It should show a new line in the `Old --> New` box. If it did, you did everything correctly. Now let's create group 2 aged 31 to 50 like this. 
 
 ![age group 2](./img/age_group_2.png)
 
+Don't forget to click **Add** again for that one. The last group will be the ones 51 and older. We can do it like this:
+
 ![age group 3](./img/age_group_3.png)
 
-![output window](./img/output.png)
+Perfect! Now we can click **Continue** in this window and the next one. Once you did it SPSS will navigate you to the **Outout** window that should look somewhat like this:
+
+![output recode](./img/recode_output.png)
+
+In this window SPSS will show you what code it executes. In this case it basically told us:
+
+> *Hey! I recoded the agea variable into age_re using the rules you provided it and labeled it "Age groups".*
+
+Go ahead and check whether the values are recoded correctly by switching to **Data View* and exploring the values of `agea` and `age_re`. 
+
+
+---
+
+### Challenge 3: Recoding a variable
+
+There are several variables evaluating trust in this database. Each measure trust from 0 (No trust) to 10 (Complete trust). Take the variable `trstprl` (Trust in country's parliament) and recode it into a new variable with 3 categories:
+
+1. Low trust: Values from 0 to 4
+2. Moderate trust: Values from 5 to 7
+3. High trust: Values from  8 to 10
+
+Not only create new categories as 1,2 and 3, but label them as Low, Middle and High trust in the **Variable view**. 
+
+---
