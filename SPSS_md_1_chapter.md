@@ -76,11 +76,11 @@ Now it's time for your first challenge! Go to the **Variable View** and create 3
 
 ### Importing data from CSV and Excel
 
-Now when you have a basic understanding of how SPSS looks and works, we can take one step further and explore how to import spreadsheets into SPSS. During the years of teaching SPSS we encountered a question of how to import `.csv` or `.xlsx` files into SPSS. Indeed, it's a very useful skill, becuase a lot of datasets are stored as Excel of CSV (Comma-Separated Values) files. To do that go to SPSS -> File –> Import Data -> ...
+Now when you have a basic understanding of how SPSS looks and works, we can take one step further and explore how to import spreadsheets into SPSS. During the years of teaching SPSS we encountered a question of how to import `.csv` or `.xlsx` files into SPSS. Indeed, it's a very useful skill, becuase a lot of datasets are stored as Excel of CSV (Comma-Separated Values) files. To do that go to `SPSS -> File –> Import Data -> ...`
 
 1. Excel 
 
-Let's consider our example. Go to SPSS -> File –> Import Data -> Excel and let's import a file called `dem_data.xlsx`. You should see this window after selecting this file and clicking "Open":
+Let's consider our example. Go to `SPSS -> File –> Import Data -> Excel` and let's import a file called `dem_data.xlsx`. You should see this window after selecting this file and clicking "Open":
 
 ![read excel](./img/read_excel.png)
 
