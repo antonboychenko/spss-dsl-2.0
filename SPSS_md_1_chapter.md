@@ -70,13 +70,22 @@ Let's now click on "Variable View" at the bottom of this window and explore it. 
 Now it's time for your first challenge! Go to the **Variable View** and create 3 variables (to do it simply scroll down all the variables and click on the first empty row in **Variable View**):
 
 1. **Name**: height, **Label**: Person's height, **Values**: None (as it's a scale variable), **Measure**: Scale (To change the Measure, simply click on the corresponding cell)
-2. **Name**: plane_class, **Label**: Plane ticket class, **Values**: 1-First, 2-Second, 3-Third, **Measure**: Ordinal
+2. **Name**: pln_class, **Label**: Plane ticket class, **Values**: 1-First, 2-Second, 3-Third, **Measure**: Ordinal
 3. **Name**: fav_col, **Label**: Favorite colour, **Values**: 1-Red, 2-Green, 3-Blue, **Measure**: Nominal
 
 
 ### Importing data from CSV and Excel
 
-Now when you have a basic understanding of how SPSS looks and works, we can take one step further and explore how to import spreadsheets into SPSS. During the years of teaching SPSS we encountered a question of how to import `.csv` or `.xlsx` files into SPSS. Indeed, it's a very useful skill. To do that go to SPSS -> 
+Now when you have a basic understanding of how SPSS looks and works, we can take one step further and explore how to import spreadsheets into SPSS. During the years of teaching SPSS we encountered a question of how to import `.csv` or `.xlsx` files into SPSS. Indeed, it's a very useful skill, becuase a lot of datasets are stored as Excel of CSV (Comma-Separated Values) files. To do that go to SPSS -> File –> Import Data -> ...
+
+1. Excel 
+
+Let's consider our example. Go to SPSS -> File –> Import Data -> Excel and let's import a file called `dem_data.xlsx`. You should see this window after selecting this file and clicking "Open":
+
+![read excel](./img/read_excel.png)
+
+You can see that you can select a sheet from which to read the data and then we have a number of parameters that are quite straightforward. Let's click "OK" once we are satisfied with our settings. Now go to the variable view and look at the **Measure** settings SPSS used. Are they correct? 
+
 
 
 
