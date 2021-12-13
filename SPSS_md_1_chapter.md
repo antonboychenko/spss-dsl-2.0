@@ -105,12 +105,32 @@ When importing CSV one should be careful, because as **columns are separated by 
 
 As your second task:
 
-1. import the `dem_data` in either Excel of CSV format
-2. Add labels to your variables, namely  "Respondent's salary", "Age of a respondent",  and "Gender" to corresponding variables
-3. For the gender variables add values: 1 - Male, 2 - Female, 3 - Other (specified)
+1. Import the `dem_data` in either Excel of CSV format
+2. Check if the **Measure** settings are correct
+3. Add labels to your variables, namely  "Respondent's salary", "Age of a respondent",  and "Gender" to corresponding variables
+4. For the gender variables add values: 1 - Male, 2 - Female, 3 - Other (specified)
 
 
 ---
+
+
+### Recoding variables
+
+Now as we learned how to open datasets and import them from other file formats we can finally work with data. The first thing to do with data is preprocessing, so in this section we will take one step into that and learn how to **recode** variables. There are many cases when it may be useful. For instance you want to group your respondents into age groups. You want to have those that are younger than 30, from 31 to 50 and 50 and older. To do that, we can use SPSS functionality. 
+
+Let's use our **ESS5GB.sav** file again (you can close the imported ones). Let's take the following path `SPSS -> Transform –> Recode into Different Variables`. Recoding into Different Variables will create new recoded variables compared to Recode into Same Variables that will **change the exisiting ones**. We choose the former in order to **avoid changing the original data**. Once you clicked on Recode into Different Variables you will see the follwing window:
+
+![recode window](./img/recoding_window.png)
+
+> **Lifehack not to get lost in variables**
+> You can see that there is an overwhelming number of variables in this dataset. No to get lost in them right-click in the area of variables (like in the picture below) and select `Display Variable Names` and `Sort Alpahbetically`. This way you will have short names ordered in a nice order.
+
+![lifehack](./img/lifehack.png)
+
+We will be working with a variable called `agea` (Age of respondent...). Find and click on this variable (it will be highlighted in blue) and click on the blue arrow in the middle of the window so it moves to the box on the right like this:
+
+![moved variable](./img/moved_var.png)
+
 
 
 ![output window](./img/output.png)
