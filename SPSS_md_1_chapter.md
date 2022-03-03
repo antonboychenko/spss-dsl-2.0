@@ -14,7 +14,15 @@ This session is dedicated to the fundamentals of data management. By the end of 
 
 It may sound like a lot, but it will take less than it seems. Let’s go through them one by one. 
 
-### Opening SPSS datasets
+## Table of Contents
+
+- [Opening SPSS datasets](#spss_data)
+- [SPSS interface](#interface)
+- [Importing data from CSV and Excel](#csv_data)
+- [Recoding variables](#recoding)
+- [Computing variables](#computing)
+
+### Opening SPSS datasets <a name = "spss_data"></a>
 
 There is a high chance that you will be using a dataset that is already saved in the SPSS format, so you do not need to do any preprocessing and can use the file straight away. SPSS uses `.sav` extensions, and, for instance, the file that we will be using for our workshops is called **ESS5GB.sav**. This comes from the ESS ([European Social Survey](https://www.europeansocialsurvey.org), which is used in a lot of research (and may be useful in yours). We simply downloaded these data from the ESS site in the SPSS format. 
 
@@ -27,7 +35,7 @@ This is an output window. SPSS warnings, messages, and (what's important) all th
 
 We will now explore the first one a little more thoroughly. The output window will be most relevant once we start conducting some analysis. 
 
-### SPSS interface
+### SPSS interface <a name = "interface"></a>
 
 Let's explore the interface of the data editor window. You should see something similar to this:
 
@@ -76,7 +84,7 @@ Now it's time for your first challenge! Go to the **Variable View** and create 3
 
 ---
 
-### Importing data from CSV and Excel
+### Importing data from CSV and Excel <a name = "csv_data"></a>
 
 Now when you have a basic understanding of how SPSS looks and works, we can take one step further and explore how to import spreadsheets into SPSS. During the years of teaching SPSS, we encountered a question of how to import `.csv` or `.xlsx` files into SPSS. Indeed, it's a very useful skill, because a lot of datasets are stored as Excel or CSV (Comma-Separated Values) files. To do that go to `SPSS -> File –> Import Data -> ...`
 
@@ -99,6 +107,8 @@ When importing CSV one should be careful, because **columns are separated by a s
 
 3. **You can use other dataset types to import to SPSS using the same sequence of steps again**.
 
+**Note** that you can open multiple datasets at the same time. Should you do so, pay attention to what dataset you are working at the moment. 
+
 ---
 
 ### Challenge 2: Correcting imported datasets
@@ -113,8 +123,8 @@ As your second task:
 ---
 
 
-### Recoding variables
-
+### Recoding variables <a name = "recoding"></a>
+ 
 Now as we learned how to open datasets and import them from other file formats we can finally work with data. The first thing to do with data is preprocessing, so in this section, we will take one step into that and learn how to **recode** variables. There are many cases when it may be useful. For instance, you want to group your respondents into age groups. You want to have those that are younger than 30, from 31 to 50 and 50 and older. To do that, we can use SPSS functionality. 
 
 Let's use our **ESS5GB.sav** file again (you can close the imported ones). Let's take the following path `SPSS -> Transform –> Recode into Different Variables. Recoding into Different Variables will create new recoded variables compared to Recode into Same Variables that will **change the existing ones**. We choose the former in order to **avoid changing the original data**. Once you click on Recode into Different Variables you will see the following window:
@@ -159,7 +169,7 @@ Go ahead and check whether the values are recoded correctly by switching to **Da
 
 ### Challenge 3: Recoding a variable
 
-There are several variables evaluating trust in this database. Each measure trust from 0 (No trust) to 10 (Complete trust). Take the variable `trstprl` (Trust in country's parliament) and recode it into a new variable with 3 categories:
+There are several variables evaluating trust in the ESS5GB.sav data. Each measure trust from 0 (No trust) to 10 (Complete trust). Take the variable `trstprl` (Trust in country's parliament) in ESS5GB.sav and recode it into a new variable with 3 categories:
 
 1. Low trust: Values from 0 to 4
 2. Moderate trust: Values from 5 to 7
@@ -170,7 +180,7 @@ Not only create new categories as 1,2 and 3, but label them as Low, Middle, and 
 ---
 
 
-### Computing variables
+### Computing variables <a name = "computing"></a>
 
 Good job! We are almost done for today! The last part of our today's session is dedicated to calculating new variables. You might need it, for instance, when you are creating indices and want to give different weights to different variables. Let's consider an example.
 
