@@ -30,7 +30,7 @@ The Chi-squared test looks at associations between two categorical variables. We
 
 For example, in the table below we look at if smokers are ill or not. We can see that out of 56 smokers 39 are ill, compared to 18 out of 78 non-smokers who are not ill. The chi-square tests lets us assess if this apparent association is significant.  
 
-| --- | Smoker       | Non-Smoker   | Total |
+|  | Smoker       | Non-Smoker   | Total |
 |:----------:|:------------:|:------------:|:---: |
 |Ill         |  39          |  18			  | 57 |
 |Not ill     |  17          |  60			  | 77 |
