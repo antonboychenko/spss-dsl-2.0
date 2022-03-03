@@ -303,6 +303,6 @@ Our hypothesis might be:
 *Note we did not have time to fully explain ANOVAs, how they work, and how they are related to linear models (which we will cover in SPSS session 4).* You can read more about ANOVAs [here](https://www.spss-tutorials.com/anova-what-is-it/) if you are interested.
 
 
-## Complete the course survey <a name = "survey"><a/>
+## Final challenge - complete the course survey <a name = "survey"><a/>
 
-Add survey link here
+[Click this link to complete the survey](https://lse.eu.qualtrics.com/jfe/form/SV_eflc2yj4pcryc62?coursename=SPSS%203:%20Introduction%20to%20inferential%20statistics&topic=SPSS&link=&prog=SR&version=21-22&link2=)
