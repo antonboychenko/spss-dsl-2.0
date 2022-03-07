@@ -21,6 +21,7 @@ It may sound like a lot, but it will take less than it seems. Let’s go through
 - [Importing data from CSV and Excel](#csv_data)
 - [Recoding variables](#recoding)
 - [Computing variables](#computing)
+- [Course survey](#survey)
 
 ### Opening SPSS datasets <a name = "spss_data"></a>
 
@@ -201,8 +202,12 @@ Go ahead, click **OK**, and check whether it actually conducted the calculation.
 
 ---
 
-### Final Challenge: Computing a variable
+### Challenge 4: Computing a variable
 
 The final task! Using `SPSS -> Transform –> Compute Variable` create a new variable called `trst_tot` that will be a sum of all trust variables in the database. 
 
 ---
+
+## Final challenge - complete the course survey <a name = "survey"><a/>
+
+[Click this link to complete the survey](https://lse.eu.qualtrics.com/jfe/form/SV_eflc2yj4pcryc62?coursename=SPSS%201:%20Foundations%20of%20Data%20Management&topic=SPSS&link=&prog=SR&version=21-22&link2=)
