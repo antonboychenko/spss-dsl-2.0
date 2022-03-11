@@ -1,4 +1,17 @@
-# Introduction to Inferential Statistics
+# DSL SPSS
+
+## Part III: Introduction to Inferential Statistics
+
+Welcome to the third SPSS workshop from the Digital Skills Lab at LSE. 
+
+In previous workshops we have got familiar with the SPSS interface, learned how to open datasets, recode and make variables, and start to do some exploratory analysis of variables through visualisations. In this session we will learn the basics of how to do inferential statistics in SPSS. By the end of this session, you will learn how to:
+
+- Make a hypothesis and test it on a dataset using SPSS
+- Perform cross tabulation and interpret the output
+- Perform different t-tests and interpret the output
+- Perform different ANOVAs and interpret the output
+
+We hope you enjoy this workshop! 
 
 ## Table of Contents
 
@@ -16,30 +29,32 @@ We will be using the same dataset we have used in previous sessions, the ESS ([E
 
 Open this file now, either by double clicking on the file in finder (Mac) or Windows Explorer, or using *file -> open -> data* in SPSS. 
 
-Follow the example steps provided, then have a go at the challenges for each section. 
+Follow the example steps provided, then attempt the challenges for each section. 
 
 ## What is inferential statistics?
 
-Some notes here on what inferential statistics are, why they are used, and why important. 
+Inferential statistics is defined as a way of making inferences about populations based on samples. 
+
+As it is very hard to test a whole population on the research topic you want to study, in research you will most likely have to take a sample of a population to collect data from. You use the information you've gathered from your sample to make *inferences* (draw conclusions) about the wider population.
 
 ## Cross tabulation and Chi-Squared tests <a name = "crosstab"></a>
 
-The chi-squared test is for comparing observed frequencies to expected frequencies **- what is an observed and expected frequency?**
+The chi-squared test is for comparing observed frequencies to expected frequencies. Observed frequencies are those observed in the sample, e.g., 10 people responded yes to a question. Expected frequencies are a probability calculation designed to assess the number of times an event **could** occur; more on this later. 
 
-The Chi-squared test looks at associations between two categorical variables. We use it when we are testing frequency data, the number of times something occurs. We review these associations with cross tabulation, that displays these associations in a grid. 
+The Chi-squared test looks at associations between two categorical variables. We use it when we are testing frequency data: the number of times something occurs. We review these associations with cross tabulation, which displays these associations in a grid. 
 
 For example, in the table below we look at if smokers are ill or not. We can see that out of 56 smokers 39 are ill, compared to 18 out of 78 non-smokers who are not ill. The chi-square tests lets us assess if this apparent association is significant.  
 
-|  | Smoker       | Non-Smoker   | Total |
-|:----------:|:------------:|:------------:|:---: |
-|Ill         |  39          |  18			  | 57 |
-|Not ill     |  17          |  60			  | 77 |
-|**Total**   |  56          |  78 			  | 134 |
+            | Smoker       | Non-Smoker   | Total
+:----------:|:------------:|:------------:|:---:
+Ill         |  39          |  18			  | 57
+Not ill     |  17          |  60			  | 77
+**Total**   |  56          |  78 			  | 134
 
 
 To run a chi-square in SPSS we need to go to the crosstabs menu. See the image below how to find crosstabs: 
 
-![Menu to run cross tab](./img/crosstabs_1.png)
+![Menu to run cross tab](img/crosstabs_1.PNG)
 
 This should bring up the cross tabulation screen. From here we can add our variables to test on. 
 
@@ -49,15 +64,15 @@ To run a Chi-square test we need to go into the statistics tab, and select chi-s
 
 It is also important to get the *expected counts*. To add the expected counts go to cells -> tick expected counts. 
 
-Expected counts are a probability test to determine what count/frequency of an observation we would expect to see from our data. We calculate these using this formula: `expected counts = (row total * column total)/sample size`. From our smoking example our expected count for smoker and ill would be: `(57 * 56)/134 = 23.8209`; so we *expect* 23.82 people who smoke to be ill. As a general rule for chi-square tests, we would expect all expected frequencies to be greater than 5. 
+Expected counts (we called them expected frequencies earlier) are a probability test to determine what count/frequency of an observation we would expect to see from our data. We calculate these using this formula: `expected counts = (row total * column total)/sample size`. From our smoking example our expected count for smoker and ill would be: `(57 * 56)/134 = 23.8209`; so we *expect* 23.82 people who smoke to be ill. **As a general rule for chi-square tests, we would expect all expected frequencies to be greater than 5**. 
 
 We can also select *display clustered bar charts*, which runs a nice visualisation on our cross tabulation. See the image below of what we have done:
 
-![Cross tab and chi-square options](./img/crosstabs_2.png)
+![Cross tab and chi-square options](img/crosstabs_2.PNG)
 
 Once you run the cross tabulation you will get several tables and a graph that will pop up in your output viewer. Of most interest are the *Crosstabulation* and the *Chi-Square Tests* tables, shown below:
 
-![](./img/chi_square.png)
+![](img/chi_square.PNG)
 
 The cross tabulation gives us a visual summary of our data. We can see that more females than males responded to both yes and no to the burglary/assault variable, and we had more female responses overall. 
 
@@ -145,25 +160,25 @@ The ESS dataset we are using allows us to use both of these designs. We can use 
 
 We will first have a go at running an independent samples t-test, the next chapter we will try the paired-samples t-test. To run an independent samples t-test in SPSS we select the compare means menu from analyse, then find independent samples t-test.
 
-![](./img/t_test_1.png)
+![](img/t_test_1.PNG)
 
 The dialog box for  independent samples t-test should appear. The test variable is the variable we want to compare the two means on, we have used `Police doing good or bad job`. The grouping variable is a nominal (categorical) variable, ideally with two groups (or you select two groups), we have used `gender`. SPSS needs you to *define the groups* before you can run the test; for gender they are labeled 1 for male and 2 for gender. We can find this information in the variable view from the variables value labels. See the images below on how to do this:
 
-![](./img/t_test_2.png)
+![](img/t_test_2.PNG)
 
-![](./img/t_test_3.png)
+![](img/t_test_3.PNG)
 
 Once you've defined the groups you can run your t-test! You'll get an output with group statistics, which is the descriptive statistics, such as mean and standard deviation for your groups, and the t-test output. The green box in the image below indicates the part of the t-test output we are most interested in. In this case, the *Sig. (2-tailed)* is our p-value, which is showing 0.000. This tells us there is a significant difference between someones perception of how good a job the police are doing depending on their gender. 
 
-![](./img/t_test_4.png)
+![](img/t_test_4.PNG)
 
 As a bonus, it can be helpful to visualise the mean values with error bars. We first start by making a bar chart. 
 
-![](./img/error_bar_1.png)
+![](img/error_bar_1.PNG)
 
 Once in the bar chart menu, we can add error bars using options. See the image below:
 
-![](./img/error_bar_2.png)
+![](img/error_bar_2.PNG)
 
 When you select OK, you should get a nice bar chart with error bars. 
 
@@ -186,15 +201,15 @@ In this example, we are interested to see if there is a difference in respondent
 
 To run a paired-samples t-test in SPSS, we go to the analyse menu -> compare means -> paired-samples t test. 
 
-![](./img/paired1.png)
+![](img/paired1.PNG)
 
 This will take you to the paired-samples T test menu. We can test out many pairs of variables, but in this example we will just test one pair: TV watching and Radio listening. You can either drag and drop the variables, or move with the arrow. Once you've moved the variables as per the image below, select *OK* to run the test.  
 
-![](./img/paired2.png)
+![](img/paired2.PNG)
 
 The output you get has three tables. The first provides some descriptive statistics of our variables, in this example we can see average TV watching is 4.97 hours and average radio listening is 2.85 hours. The second shows correlation between the variables; correlation will be covered in workshop 4! The final table is the t-test, the green box shows us the part we are most interested in, which shows us there is a significant difference between average TV watching and radio listening in respondents. This suggests people who took this survey, on average, spend more time watching TV than listening to the radio. 
 
-![](./img/paired3.png)
+![](img/paired3.PNG)
 
 ### Challenge 4: Run a paired samples t-test
 
@@ -221,18 +236,18 @@ In this example we are interested in finding out if different legal marital stat
 
 To run a one-way ANOVA we start by going to analyze -> compare means -> one-way ANOVA.
  
-![](./img/oneway1.png)
+![](img/oneway1.PNG)
 
 When the one-way ANOVA dialog box appears, we first move the variables we want to test on. TV watching goes to dependent list, and legal marital status goes to factor. 
 
 We will want to add some extra elements to our one-way ANOVA; see images below. First we select *options*, and tick the descriptive, homogeneity, and means plot. Then we want to select *Post hoc* and select *Tukey*; post hoc tests help us to find out if we have a significant result, where this difference occurred. 
 
-![](./img/oneway2.png)
-![](./img/oneway3.png)
+![](img/oneway2.PNG)
+![](img/oneway3.PNG)
 
 Now select ok to run the one-way ANOVA, and you should get several tables in your output viewer. In the image below we have highlighted two key things to look at. The green box shows us the ANOVA result, which has a *sig* (p value) less than 0.000, so very significant. The post hoc tests show us the interactions between each of the groups (like a t-test). The blue box shows us a significant post hoc test, suggesting our significant ANOVA result was, in part, driven by the difference mean TV watching time between those who are legally married and those that are widowed. 
 
-![](./img/oneway4.png)
+![](img/oneway4.PNG)
 
 Have a look at the rest of the post hoc tests to see if you can see any other significant interactions. 
 
@@ -263,21 +278,21 @@ For this example, we can expand our paired-samples t-test example. We want to te
 
 To run a repeated measures ANOVA we go to analyze -> general linear model -> repeated measures.
 
-![](./img/repeat1.png)
+![](img/repeat1.PNG)
 
 A dialog box will appear and ask you to define your factors. This is asking you to tell SPSS how many related variables you will be comparing. In this case, we have made a factor called habits, with three levels (we have three variables). Select *add* once you've add the information, and then define. 
 
-![](./img/repeat2.png)
+![](img/repeat2.PNG)
 
 We now get a familiar dialog box, this time for repeated measures ANOVA. Add the TV, radio, and newspaper variables as your within-subject factors. In options, select descriptives and homogeneity tests. Select ok and run your repeated measures ANOVA. 
 
-![](./img/repeat3.png)
+![](img/repeat3.PNG)
 
 You will see several tables appear, the two you are most interested in are shown in the image below. You will notice there are several tests, shown in the green box in the image below; to know which test to run, check out [this useful flow chart](https://www.spss-tutorials.com/spss-repeated-measures-anova-2-within-subjects-factors/#sphericity-flowchart). 
 
 Using this flow chart, we would use the huynh-feldt test. In this particular case, all tests are significant, telling us there is a significant difference between respondents TV, reading, and newspaper habits. 
 
-![](./img/repeat4.png)
+![](img/repeat4.PNG)
 
 ### Challenge 6: Run a repeated measures ANOVA
 
