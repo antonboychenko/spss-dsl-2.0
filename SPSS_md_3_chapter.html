@@ -331,9 +331,24 @@ kbd {
 
 <body>
 
-<h1 id="toc_0">Introduction to Inferential Statistics</h1>
+<h1 id="toc_0">DSL SPSS</h1>
 
-<h2 id="toc_1">Table of Contents</h2>
+<h2 id="toc_1">Part III: Introduction to Inferential Statistics</h2>
+
+<p>Welcome to the third SPSS workshop from the Digital Skills Lab at LSE. </p>
+
+<p>In previous workshops we have got familiar with the SPSS interface, learned how to open datasets, recode and make variables, and start to do some exploratory analysis of variables through visualisations. In this session we will learn the basics of how to do inferential statistics in SPSS. By the end of this session, you will learn how to:</p>
+
+<ul>
+<li>Make a hypothesis and test it on a dataset using SPSS</li>
+<li>Perform cross tabulation and interpret the output</li>
+<li>Perform different t-tests and interpret the output</li>
+<li>Perform different ANOVAs and interpret the output</li>
+</ul>
+
+<p>We hope you enjoy this workshop! </p>
+
+<h2 id="toc_2">Table of Contents</h2>
 
 <ul>
 <li><a href="#crosstab">Cross tabulation and Chi-Squared tests</a></li>
@@ -345,23 +360,25 @@ kbd {
 <li><a href="#survey">Course survey</a></li>
 </ul>
 
-<h2 id="toc_2">Getting started</h2>
+<h2 id="toc_3">Getting started</h2>
 
 <p>We will be using the same dataset we have used in previous sessions, the ESS (<a href="https://www.europeansocialsurvey.org">European Social Survey</a>) data that is called <strong>ESS5GB.sav</strong>. </p>
 
 <p>Open this file now, either by double clicking on the file in finder (Mac) or Windows Explorer, or using <em>file -&gt; open -&gt; data</em> in SPSS. </p>
 
-<p>Follow the example steps provided, then have a go at the challenges for each section. </p>
+<p>Follow the example steps provided, then attempt the challenges for each section. </p>
 
-<h2 id="toc_3">What is inferential statistics?</h2>
+<h2 id="toc_4">What is inferential statistics?</h2>
 
-<p>Some notes here on what inferential statistics are, why they are used, and why important. </p>
+<p>Inferential statistics is defined as a way of making inferences about populations based on samples. </p>
 
-<h2 id="toc_4">Cross tabulation and Chi-Squared tests <a name = "crosstab"></a></h2>
+<p>As it is very hard to test a whole population on the research topic you want to study, in research you will most likely have to take a sample of a population to collect data from. You use the information you&#39;ve gathered from your sample to make <em>inferences</em> (draw conclusions) about the wider population.</p>
 
-<p>The chi-squared test is for comparing observed frequencies to expected frequencies <strong>- what is an observed and expected frequency?</strong></p>
+<h2 id="toc_5">Cross tabulation and Chi-Squared tests <a name = "crosstab"></a></h2>
 
-<p>The Chi-squared test looks at associations between two categorical variables. We use it when we are testing frequency data, the number of times something occurs. We review these associations with cross tabulation, that displays these associations in a grid. </p>
+<p>The chi-squared test is for comparing observed frequencies to expected frequencies. Observed frequencies are those observed in the sample, e.g., 10 people responded yes to a question. Expected frequencies are a probability calculation designed to assess the number of times an event <strong>could</strong> occur; more on this later. </p>
+
+<p>The Chi-squared test looks at associations between two categorical variables. We use it when we are testing frequency data: the number of times something occurs. We review these associations with cross tabulation, which displays these associations in a grid. </p>
 
 <p>For example, in the table below we look at if smokers are ill or not. We can see that out of 56 smokers 39 are ill, compared to 18 out of 78 non-smokers who are not ill. The chi-square tests lets us assess if this apparent association is significant.  </p>
 
@@ -399,7 +416,7 @@ kbd {
 
 <p>To run a chi-square in SPSS we need to go to the crosstabs menu. See the image below how to find crosstabs: </p>
 
-<p><img src="img/crosstabs_1.PNG" alt="Menu to run cross tab"></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/crosstabs_1.png?token=GHSAT0AAAAAABRLXP64TKZK7KS4JLXN2T5WYRYMSPA" alt="Menu to run cross tab"></p>
 
 <p>This should bring up the cross tabulation screen. From here we can add our variables to test on. </p>
 
@@ -409,15 +426,15 @@ kbd {
 
 <p>It is also important to get the <em>expected counts</em>. To add the expected counts go to cells -&gt; tick expected counts. </p>
 
-<p>Expected counts are a probability test to determine what count/frequency of an observation we would expect to see from our data. We calculate these using this formula: <code>expected counts = (row total * column total)/sample size</code>. From our smoking example our expected count for smoker and ill would be: <code>(57 * 56)/134 = 23.8209</code>; so we <em>expect</em> 23.82 people who smoke to be ill. As a general rule for chi-square tests, we would expect all expected frequencies to be greater than 5. </p>
+<p>Expected counts (we called them expected frequencies earlier) are a probability test to determine what count/frequency of an observation we would expect to see from our data. We calculate these using this formula: <code>expected counts = (row total * column total)/sample size</code>. From our smoking example our expected count for smoker and ill would be: <code>(57 * 56)/134 = 23.8209</code>; so we <em>expect</em> 23.82 people who smoke to be ill. <strong>As a general rule for chi-square tests, we would expect all expected frequencies to be greater than 5</strong>. </p>
 
 <p>We can also select <em>display clustered bar charts</em>, which runs a nice visualisation on our cross tabulation. See the image below of what we have done:</p>
 
-<p><img src="img/crosstabs_2.PNG" alt="Cross tab and chi-square options"></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/crosstabs_2.png?token=GHSAT0AAAAAABRLXP64VYN7XUDQXI2RQKVIYRYMSYQ" alt="Cross tab and chi-square options"></p>
 
 <p>Once you run the cross tabulation you will get several tables and a graph that will pop up in your output viewer. Of most interest are the <em>Crosstabulation</em> and the <em>Chi-Square Tests</em> tables, shown below:</p>
 
-<p><img src="img/chi_square.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/chi_square.png?token=GHSAT0AAAAAABRLXP64WSNRJ4W7WRWENKICYRYMTIQ" alt=""></p>
 
 <p>The cross tabulation gives us a visual summary of our data. We can see that more females than males responded to both yes and no to the burglary/assault variable, and we had more female responses overall. </p>
 
@@ -429,7 +446,7 @@ kbd {
 
 <p>The chi-square tells us if the association is significant between our variables. The green box shows what we are interested in, which is the <em>Pearson Chi-Square</em>. In this case the p value (<em>Asymptotic Significance (2-sided)</em>) is greater than 0.05, which means our test is not significant and no association between gender and victim of burglary/assault was found. </p>
 
-<h3 id="toc_5">Challenge 1: Run a Chi-Square test</h3>
+<h3 id="toc_6">Challenge 1: Run a Chi-Square test</h3>
 
 <p>We are interested in testing if subjects who have, and have not, been burgled or assaulted in the last five years have a different attitude in how good a job the police are doing. </p>
 
@@ -443,7 +460,7 @@ kbd {
 <li>Run the test - how would you interpret the result? </li>
 </ol>
 
-<h2 id="toc_6">Notes on significance testing <a name = "sig"></a></h2>
+<h2 id="toc_7">Notes on significance testing <a name = "sig"></a></h2>
 
 <p>You will have noticed that with the chi-squared test we just performed we were able to determine if there was, or was not, an association between two variables. This is known as significance testing. </p>
 
@@ -478,7 +495,7 @@ kbd {
 <p>If we did a statistical test on our rainfall example and found a p-value of 0.01 we could reject the null hypothesis as our test is below the 0.05 cutoff.</p>
 </blockquote>
 
-<h3 id="toc_7">Challenge 2: Make a hypothesis</h3>
+<h3 id="toc_8">Challenge 2: Make a hypothesis</h3>
 
 <p>As we already have the data we will make a hypothesis based on the variables we have. The ESS dataset we are using is survey data with various issues such as politics and policing. </p>
 
@@ -500,7 +517,7 @@ kbd {
 
 <p>We will take your null and alternate hypothesis to the next challenge and test it out! </p>
 
-<h2 id="toc_8">T-Tests <a name = "ttest"></a></h2>
+<h2 id="toc_9">T-Tests <a name = "ttest"></a></h2>
 
 <p>In the last challenge we made a hypothesis and null hypothesis, we will test this out in the challenge. First, we need to learn how to run a t-test in SPSS! </p>
 
@@ -521,29 +538,29 @@ kbd {
 
 <p>We will first have a go at running an independent samples t-test, the next chapter we will try the paired-samples t-test. To run an independent samples t-test in SPSS we select the compare means menu from analyse, then find independent samples t-test.</p>
 
-<p><img src="img/t_test_1.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/t_test_1.png?token=GHSAT0AAAAAABRLXP647FMMXJ26XWDNUMY4YRYMUQQ" alt=""></p>
 
 <p>The dialog box for  independent samples t-test should appear. The test variable is the variable we want to compare the two means on, we have used <code>Police doing good or bad job</code>. The grouping variable is a nominal (categorical) variable, ideally with two groups (or you select two groups), we have used <code>gender</code>. SPSS needs you to <em>define the groups</em> before you can run the test; for gender they are labeled 1 for male and 2 for gender. We can find this information in the variable view from the variables value labels. See the images below on how to do this:</p>
 
-<p><img src="img/t_test_2.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/t_test_2.png?token=GHSAT0AAAAAABRLXP644QKJHVK2S5GPPMVWYRYMUZA" alt=""></p>
 
-<p><img src="img/t_test_3.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/t_test_3.png?token=GHSAT0AAAAAABRLXP64VRMMIVH5TJ5YZPJGYRYMVCQ" alt=""></p>
 
 <p>Once you&#39;ve defined the groups you can run your t-test! You&#39;ll get an output with group statistics, which is the descriptive statistics, such as mean and standard deviation for your groups, and the t-test output. The green box in the image below indicates the part of the t-test output we are most interested in. In this case, the <em>Sig. (2-tailed)</em> is our p-value, which is showing 0.000. This tells us there is a significant difference between someones perception of how good a job the police are doing depending on their gender. </p>
 
-<p><img src="img/t_test_4.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/t_test_4.png?token=GHSAT0AAAAAABRLXP64VT6ATWWQZ4HCNJOEYRYMVVA" alt=""></p>
 
 <p>As a bonus, it can be helpful to visualise the mean values with error bars. We first start by making a bar chart. </p>
 
-<p><img src="img/error_bar_1.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/error_bar_1.png?token=GHSAT0AAAAAABRLXP6535M4EPFWP4Z24XCQYRYMV7Q" alt=""></p>
 
 <p>Once in the bar chart menu, we can add error bars using options. See the image below:</p>
 
-<p><img src="img/error_bar_2.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/error_bar_2.png?token=GHSAT0AAAAAABRLXP65UCHCUHF4NBOGS4QWYRYMWPQ" alt=""></p>
 
 <p>When you select OK, you should get a nice bar chart with error bars. </p>
 
-<h3 id="toc_9">Challenge 3: Run an independent samples t-test (based on your hypothesis from challenge 2)</h3>
+<h3 id="toc_10">Challenge 3: Run an independent samples t-test (based on your hypothesis from challenge 2)</h3>
 
 <p>Using the below variables we used to define our hypothesis, run an independent samples t-test in SPSS:</p>
 
@@ -556,7 +573,7 @@ kbd {
 2) Run an independent samples t-test<br>
 3) Review your output. Was the result significant, and did it match your expectations and hypothesis?  </p>
 
-<h2 id="toc_10">Paired Samples t-test <a name = "paired"></a></h2>
+<h2 id="toc_11">Paired Samples t-test <a name = "paired"></a></h2>
 
 <p>As explained in the previous chapter the paired-samples t-test is used to determine if two means from the same sample differ significantly. We can look too test if there is a difference in survey responses to two related questions. </p>
 
@@ -564,17 +581,17 @@ kbd {
 
 <p>To run a paired-samples t-test in SPSS, we go to the analyse menu -&gt; compare means -&gt; paired-samples t test. </p>
 
-<p><img src="img/paired1.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/paired1.png?token=GHSAT0AAAAAABRLXP64JNVFDGTM37VWTHHQYRYMXRQ" alt=""></p>
 
 <p>This will take you to the paired-samples T test menu. We can test out many pairs of variables, but in this example we will just test one pair: TV watching and Radio listening. You can either drag and drop the variables, or move with the arrow. Once you&#39;ve moved the variables as per the image below, select <em>OK</em> to run the test.  </p>
 
-<p><img src="img/paired2.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/paired2.png?token=GHSAT0AAAAAABRLXP643V5UJTN2TEODCXHKYRYMX2A" alt=""></p>
 
 <p>The output you get has three tables. The first provides some descriptive statistics of our variables, in this example we can see average TV watching is 4.97 hours and average radio listening is 2.85 hours. The second shows correlation between the variables; correlation will be covered in workshop 4! The final table is the t-test, the green box shows us the part we are most interested in, which shows us there is a significant difference between average TV watching and radio listening in respondents. This suggests people who took this survey, on average, spend more time watching TV than listening to the radio. </p>
 
-<p><img src="img/paired3.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/paired3.png?token=GHSAT0AAAAAABRLXP65TNB75XAEHOKKZTY4YRYM3IQ" alt=""></p>
 
-<h3 id="toc_11">Challenge 4: Run a paired samples t-test</h3>
+<h3 id="toc_12">Challenge 4: Run a paired samples t-test</h3>
 
 <p>Let&#39;s say we are interested in understanding if there is a difference in respondents trust in country&#39;s parliament and trust in politicians. We might suspect that people look more favourably on the government than politicians in general. </p>
 
@@ -589,7 +606,7 @@ kbd {
 2) Run a paired-samples t-test using the <code>Trust in country&#39;s parliament</code> and <code>Trust in politicians</code> variables<br>
 3) Review your output. Was the result significant? Did it match up with your expectations and the hypothesis? </p>
 
-<h2 id="toc_12">One-way ANOVA <a name = "anova"></a></h2>
+<h2 id="toc_13">One-way ANOVA <a name = "anova"></a></h2>
 
 <p>The ANOVA, short for <em>analysis of variance</em>, is a statistical technique for testing if the average (means) of three or more variables are different. </p>
 
@@ -601,18 +618,18 @@ kbd {
 
 <p>To run a one-way ANOVA we start by going to analyze -&gt; compare means -&gt; one-way ANOVA.</p>
 
-<p><img src="img/oneway1.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/oneway1.png?token=GHSAT0AAAAAABRLXP65CWFQP6SH5OYZPO4AYRYM3XQ" alt=""></p>
 
 <p>When the one-way ANOVA dialog box appears, we first move the variables we want to test on. TV watching goes to dependent list, and legal marital status goes to factor. </p>
 
 <p>We will want to add some extra elements to our one-way ANOVA; see images below. First we select <em>options</em>, and tick the descriptive, homogeneity, and means plot. Then we want to select <em>Post hoc</em> and select <em>Tukey</em>; post hoc tests help us to find out if we have a significant result, where this difference occurred. </p>
 
-<p><img src="img/oneway2.PNG" alt="">
-<img src="img/oneway3.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/oneway2.png?token=GHSAT0AAAAAABRLXP65W6Y6N734RE7CXPJMYRYM37Q" alt="">
+<img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/oneway3.png?token=GHSAT0AAAAAABRLXP64HE3EUOC3X4T6VNPEYRYM4IA" alt=""></p>
 
 <p>Now select ok to run the one-way ANOVA, and you should get several tables in your output viewer. In the image below we have highlighted two key things to look at. The green box shows us the ANOVA result, which has a <em>sig</em> (p value) less than 0.000, so very significant. The post hoc tests show us the interactions between each of the groups (like a t-test). The blue box shows us a significant post hoc test, suggesting our significant ANOVA result was, in part, driven by the difference mean TV watching time between those who are legally married and those that are widowed. </p>
 
-<p><img src="img/oneway4.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/oneway4.png?token=GHSAT0AAAAAABRLXP64HVUSMR54EACIBYQGYRYM5GA" alt=""></p>
 
 <p>Have a look at the rest of the post hoc tests to see if you can see any other significant interactions. </p>
 
@@ -620,7 +637,7 @@ kbd {
 
 <p>In our example, our assumptions for the ANOVA where not met as the <em>Levene&#39;s</em> test was significant (see the <em>Test of Homogeneity of Variances</em> table). This means there is unequal variance between our groups or samples, so our results of the ANOVA are not trustworthy. In this instance there are other options we should use, which we don&#39;t have time to cover in this workshop. There is a <a href="https://www.spss-tutorials.com/spss-anova-levenes-test-significant/">good guide available</a> which should help, if when running an ANOVA, your Levene&#39;s test is significant. </p>
 
-<h3 id="toc_13">Challenge 5: Run an One-way ANOVA</h3>
+<h3 id="toc_14">Challenge 5: Run an One-way ANOVA</h3>
 
 <p>We want to expand our previous hypothesis from challenge 2 about how successful the police are at preventing crimes. We&#39;ve seen there is a significant difference between respondents who have been victims of assault/burglary. We might be interested to see if those that have been victims of assault/burglary have differences in responses to what sentence to give a burglar, and their perception of how good the police are at preventing crimes.  </p>
 
@@ -637,7 +654,7 @@ kbd {
 4) Review your output, do you see a significant difference?<br>
 5) Tell SPSS to select all cases again if you have not removed the filter already  </p>
 
-<h2 id="toc_14">Repeated measures ANOVA <a name = "repanova"></a></h2>
+<h2 id="toc_15">Repeated measures ANOVA <a name = "repanova"></a></h2>
 
 <p>Our final inferential test we will cover in this workshop will be the repeated measures ANOVA. Similar to the paired-samples t-test, we can compare average responses across three of more variables. </p>
 
@@ -645,23 +662,23 @@ kbd {
 
 <p>To run a repeated measures ANOVA we go to analyze -&gt; general linear model -&gt; repeated measures.</p>
 
-<p><img src="img/repeat1.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/repeat1.png?token=GHSAT0AAAAAABRLXP64YS7Q6TJV5AC6ZB3QYRYM5TQ" alt=""></p>
 
 <p>A dialog box will appear and ask you to define your factors. This is asking you to tell SPSS how many related variables you will be comparing. In this case, we have made a factor called habits, with three levels (we have three variables). Select <em>add</em> once you&#39;ve add the information, and then define. </p>
 
-<p><img src="img/repeat2.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/repeat2.png?token=GHSAT0AAAAAABRLXP65ARMSZPNFW4IDT4JUYRYM6LA" alt=""></p>
 
 <p>We now get a familiar dialog box, this time for repeated measures ANOVA. Add the TV, radio, and newspaper variables as your within-subject factors. In options, select descriptives and homogeneity tests. Select ok and run your repeated measures ANOVA. </p>
 
-<p><img src="img/repeat3.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/repeat3.png?token=GHSAT0AAAAAABRLXP64CWE4XHOOPMC26VMAYRYM6VQ" alt=""></p>
 
 <p>You will see several tables appear, the two you are most interested in are shown in the image below. You will notice there are several tests, shown in the green box in the image below; to know which test to run, check out <a href="https://www.spss-tutorials.com/spss-repeated-measures-anova-2-within-subjects-factors/#sphericity-flowchart">this useful flow chart</a>. </p>
 
 <p>Using this flow chart, we would use the huynh-feldt test. In this particular case, all tests are significant, telling us there is a significant difference between respondents TV, reading, and newspaper habits. </p>
 
-<p><img src="img/repeat4.PNG" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/repeat4.png?token=GHSAT0AAAAAABRLXP6576E2YQE4BHSTSBICYRYM66A" alt=""></p>
 
-<h3 id="toc_15">Challenge 6: Run a repeated measures ANOVA</h3>
+<h3 id="toc_16">Challenge 6: Run a repeated measures ANOVA</h3>
 
 <p>For the sixth challenge we will expand our question from challenge 4, and look at the differences in respondents trust of the political system using the following variables:</p>
 
@@ -689,7 +706,7 @@ kbd {
 
 <p><em>Note we did not have time to fully explain ANOVAs, how they work, and how they are related to linear models (which we will cover in SPSS session 4).</em> You can read more about ANOVAs <a href="https://www.spss-tutorials.com/anova-what-is-it/">here</a> if you are interested.</p>
 
-<h2 id="toc_16">Final challenge - complete the course survey <a name = "survey"><a/></h2>
+<h2 id="toc_17">Final challenge - complete the course survey <a name = "survey"><a/></h2>
 
 <p><a href="https://lse.eu.qualtrics.com/jfe/form/SV_eflc2yj4pcryc62?coursename=SPSS%203:%20Introduction%20to%20inferential%20statistics&amp;topic=SPSS&amp;link=&amp;prog=SR&amp;version=21-22&amp;link2=">Click this link to complete the survey</a></p>
 

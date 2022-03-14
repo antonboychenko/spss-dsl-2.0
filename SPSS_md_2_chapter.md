@@ -8,8 +8,8 @@ In the first workshop, we have learned how to open SPSS datasets and work with E
 
 - explore categorical variables
 - visualise categorical variables
-- explore continous variables
-- visualise continous variables
+- explore continuous variables
+- visualise continuous variables
 - explore joint distributions of variables
 
 We hope you will enjoy this workshop!
@@ -18,7 +18,7 @@ We hope you will enjoy this workshop!
 
 - [Intro to EDA](#intro)
 - [Categorical variables](#cat_var) 
-- [Continous variables](#cont_var)
+- [Continuous variables](#cont_var)
 - [Working with two variables](#2_var)
 - [Course survey](#survey)
 
@@ -31,19 +31,19 @@ You might remember levels of measurement from the previous session, such as scal
 **Categorical variables** are the ones that imply *separate* categories as values. Hence, the value of this variable cannot be in-between two values. For instance, a city a person was born in is a categorical variable. A person cannot be born a bit in London and a bit in Manchester. They are born in either one or another. In SPSS there are two types of categorical variables:
 
 1. **Ordinal** - those that imply an order of categories. Example: highest achieved level of education (High School, Bachelors's Degree, Master's Degree, etc.). You can order these categories from lowest to highest. 
-2. **Nominal** - those that imply the absence of the order of categories. Example: favorite colour (Green, Blue, Yellow, etc.). There is no order of these colours, none of them is "higher" or "lower" than any other. 
+2. **Nominal** - those that imply the absence of the order of categories. Example: favourite colour (Green, Blue, Yellow, etc.). There is no order of these colours, none of them is "higher" or "lower" than any other. 
 
-**Continous (or interval) variables** are the variables that imply the existence of an interval. A value of the variable can be anywhere in this interval. For instance, your age is a continuous variable. You can be 18 or 34 years old. But also you can be 18.5 or 34.6 years old. The level of granularity differs from variable to variable, but the key logic remains.
+**Continuous (or interval) variables** are the variables that imply the existence of an interval. A value of the variable can be anywhere in this interval. For instance, your age is a continuous variable. You can be 18 or 34 years old. But also you can be 18.5 or 34.6 years old. The level of granularity differs from variable to variable, but the key logic remains.
 
 In SPSS continuous or interval variables are called **Scale** variables. 
 
-:bulb: Take a minute and think of examples of continuous variables. Name at least two and discuss them in the breakout room. 
+:bulb: Take a minute and think of examples of continuous variables. Name at least two and discuss them with the person next to you or in your breakout room. 
 
 Let's now shift to particular variable types and understand how to explore them. 
 
 ## Categorical variables <a name = "cat_var"></a>
 
-You might understand that as the categorical variables imply that their categories are separate, we **cannot** use such descriptives as an average or a standard deviation. Imagine if you are working with a variable with people's favorite colors, where "Green" is encoded as 1, "Red" as 2, and "Blue" as 3. Let's say you calculate an average and you get 2,3. What does it mean? It is meaningless as (a) these categories are separate and act as independent entities, and (b) there is no order of these categories. To explore categorical variables we can use several methods. 
+You might understand that as the categorical variables imply that their categories are separate, we **cannot** use such descriptives as an average or a standard deviation. Imagine if you are working with a variable with people's favourite colours, where "Green" is encoded as 1, "Red" as 2, and "Blue" as 3. Let's say you calculate an average and you get 2,3. What does it mean? It is meaningless as (a) these categories are separate and act as independent entities, and (b) there is no order of these categories. To explore categorical variables we can use several methods. 
 
 ### Frequencies 
 
@@ -71,7 +71,7 @@ For the same variable that you used for Challenge 1, build a bar chart, where ea
 
 ---
 
-## Continous variables <a name = "cont_var"></a>
+## Continuous variables <a name = "cont_var"></a>
 
 Now when we have learned how to work with categorical variables we can move to continuous ones. Continuous variables open more possibilities for exploration such as calculating means, variances, ranges, etc. The quickest and easiest way to access a variety of descriptive statistics for a continuous variable is to go to `SPSS -> Analyze –> Descriptive Statistics -> Explore...`. Put your variable(s) in the box called **Dependent list**. Then, we would recommend selecting **Statistics** in the box called *Display* to avoid bulky visualisations. Once you did that click **OK**. In the resulting tables, you will get a lot of important information about your variable ranging from its mean, median, variance to skewness and kurtosis. This is an easy and useful tool to explore your continuous variables. 
 
@@ -89,11 +89,11 @@ As always you might wish to visualise your findings. For continuous variables th
 
 1. **Box-plots**: `SPSS -> Graphs –> Legacy Dialogs -> Boxplot...`. Next, you select **Simple** and **Summaries of separate variables**. After clicking **Define** you can put your variable(s) in the box called **Boxes Represent** and click **OK**. The elements of the boxplot are explained below:
 
-![boxplot](./img/boxplot.png)
+![boxplot](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/boxplot.png?token=GHSAT0AAAAAABRLXP65QQPD6ZPKIOPVPUJWYRYMPCA)
 
 Source: [Understanding Boxplots](https://towardsdatascience.com/understanding-boxplots-5e2df7bcbd51)
 
-2. **Histogrmas**: `SPSS -> Graphs –> Legacy Dialogs -> Histogram...`. You can put your variable(s) in the box called **Variable** and click **OK**. 
+2. **Histograms**: `SPSS -> Graphs –> Legacy Dialogs -> Histogram...`. You can put your variable(s) in the box called **Variable** and click **OK**. 
 
 These two options will provide you with a nice overview of a variable distribution. Now it's your turn to practice!
 
