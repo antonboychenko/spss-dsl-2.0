@@ -22,6 +22,14 @@ We hope you will enjoy this workshop!
 - [Working with two variables](#2_var)
 - [Course survey](#survey)
 
+## Getting started
+
+We will be using the same dataset we have used in previous sessions, the ESS ([European Social Survey](https://www.europeansocialsurvey.org)) data that is called **ESS5GB.sav**. 
+
+Open this file now, either by double clicking on the file in finder (Mac) or Windows Explorer, or using *file -> open -> data* in SPSS. 
+
+Follow the example steps provided, then have a go at the challenges for each section. 
+
 ## Intro to EDA <a name = "intro"></a>
 
 EDA or Exploratory Data Analysis is a key step in any data analytics or research task. Without a proper understanding of your data, you cannot conduct profound research. Hence, it is very important to explore and interrogate your data before building models and moving to something more advanced. In this workshop, we will learn how to explore different types of variables and their combinations. 
@@ -37,7 +45,8 @@ You might remember levels of measurement from the previous session, such as scal
 
 In SPSS continuous or interval variables are called **Scale** variables. 
 
-:bulb: Take a minute and think of examples of continuous variables. Name at least two and discuss them with the person next to you or in your breakout room. 
+💡 Take a minute and think of examples of continuous variables. Name at least two and discuss them in the breakout room or with the person next to you. 
+
 
 Let's now shift to particular variable types and understand how to explore them. 
 
