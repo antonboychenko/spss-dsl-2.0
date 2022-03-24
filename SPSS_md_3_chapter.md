@@ -54,7 +54,7 @@ Not ill     |  17          |  60			  | 77
 
 To run a chi-square in SPSS we need to go to the crosstabs menu. See the image below how to find crosstabs: 
 
-![Menu to run cross tab](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/crosstabs_1.png?token=GHSAT0AAAAAABRLXP64TKZK7KS4JLXN2T5WYRYMSPA)
+![Menu to run cross tab](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/crosstabs_1.png?token=GHSAT0AAAAAABRLXP64XP7YLQABEI6EQEV2YSEGHTQ)
 
 This should bring up the cross tabulation screen. From here we can add our variables to test on. 
 
@@ -68,11 +68,11 @@ Expected counts (we called them expected frequencies earlier) are a probability 
 
 We can also select *display clustered bar charts*, which runs a nice visualisation on our cross tabulation. See the image below of what we have done:
 
-![Cross tab and chi-square options](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/crosstabs_2.png?token=GHSAT0AAAAAABRLXP64VYN7XUDQXI2RQKVIYRYMSYQ)
+![Cross tab and chi-square options](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/crosstabs_2.png?token=GHSAT0AAAAAABRLXP64URK75TOVRQJ2JKQ6YSEGH3Q)
 
 Once you run the cross tabulation you will get several tables and a graph that will pop up in your output viewer. Of most interest are the *Crosstabulation* and the *Chi-Square Tests* tables, shown below:
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/chi_square.png?token=GHSAT0AAAAAABRLXP64WSNRJ4W7WRWENKICYRYMTIQ)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/chi_square.png?token=GHSAT0AAAAAABRLXP64JPG75JHV7TM4AUD6YSEGIFA)
 
 The cross tabulation gives us a visual summary of our data. We can see that more females than males responded to both yes and no to the burglary/assault variable, and we had more female responses overall. 
 
@@ -160,25 +160,25 @@ The ESS dataset we are using allows us to use both of these designs. We can use 
 
 We will first have a go at running an independent samples t-test, the next chapter we will try the paired-samples t-test. To run an independent samples t-test in SPSS we select the compare means menu from analyse, then find independent samples t-test.
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/t_test_1.png?token=GHSAT0AAAAAABRLXP647FMMXJ26XWDNUMY4YRYMUQQ)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/t_test_1.png?token=GHSAT0AAAAAABRLXP64VLJ4FZTDY2JXULK2YSEGISA)
 
 The dialog box for  independent samples t-test should appear. The test variable is the variable we want to compare the two means on, we have used `Police doing good or bad job`. The grouping variable is a nominal (categorical) variable, ideally with two groups (or you select two groups), we have used `gender`. SPSS needs you to *define the groups* before you can run the test; for gender they are labeled 1 for male and 2 for gender. We can find this information in the variable view from the variables value labels. See the images below on how to do this:
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/t_test_2.png?token=GHSAT0AAAAAABRLXP644QKJHVK2S5GPPMVWYRYMUZA)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/t_test_2.png?token=GHSAT0AAAAAABRLXP65C6UK5ZQGHPSTGUK4YSEGI6Q)
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/t_test_3.png?token=GHSAT0AAAAAABRLXP64VRMMIVH5TJ5YZPJGYRYMVCQ)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/t_test_3.png?token=GHSAT0AAAAAABRLXP65G5V5K53FJ5Q6STQ6YSEGJHA)
 
 Once you've defined the groups you can run your t-test! You'll get an output with group statistics, which is the descriptive statistics, such as mean and standard deviation for your groups, and the t-test output. The green box in the image below indicates the part of the t-test output we are most interested in. In this case, the *Sig. (2-tailed)* is our p-value, which is showing 0.000. This tells us there is a significant difference between someones perception of how good a job the police are doing depending on their gender. 
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/t_test_4.png?token=GHSAT0AAAAAABRLXP64VT6ATWWQZ4HCNJOEYRYMVVA)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/t_test_4.png?token=GHSAT0AAAAAABRLXP64WZ65NDOB2WSQPKWEYSEGJPA)
 
 As a bonus, it can be helpful to visualise the mean values with error bars. We first start by making a bar chart. 
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/error_bar_1.png?token=GHSAT0AAAAAABRLXP6535M4EPFWP4Z24XCQYRYMV7Q)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/error_bar_1.png?token=GHSAT0AAAAAABRLXP64YA2FWVP7XEAP4OHWYSEGJWQ)
 
 Once in the bar chart menu, we can add error bars using options. See the image below:
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/error_bar_2.png?token=GHSAT0AAAAAABRLXP65UCHCUHF4NBOGS4QWYRYMWPQ)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/error_bar_2.png?token=GHSAT0AAAAAABRLXP64PIRTCT55JFCVLOGWYSEGJ4A)
 
 When you select OK, you should get a nice bar chart with error bars. 
 
@@ -201,15 +201,15 @@ In this example, we are interested to see if there is a difference in respondent
 
 To run a paired-samples t-test in SPSS, we go to the analyse menu -> compare means -> paired-samples t test. 
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/paired1.png?token=GHSAT0AAAAAABRLXP64JNVFDGTM37VWTHHQYRYMXRQ)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/paired1.png?token=GHSAT0AAAAAABRLXP64V65KNHTAVWBIMTBWYSEGKCQ)
 
 This will take you to the paired-samples T test menu. We can test out many pairs of variables, but in this example we will just test one pair: TV watching and Radio listening. You can either drag and drop the variables, or move with the arrow. Once you've moved the variables as per the image below, select *OK* to run the test.  
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/paired2.png?token=GHSAT0AAAAAABRLXP643V5UJTN2TEODCXHKYRYMX2A)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/paired2.png?token=GHSAT0AAAAAABRLXP6426IPUF6MDAKNIZ6AYSEGKJA)
 
 The output you get has three tables. The first provides some descriptive statistics of our variables, in this example we can see average TV watching is 4.97 hours and average radio listening is 2.85 hours. The second shows correlation between the variables; correlation will be covered in workshop 4! The final table is the t-test, the green box shows us the part we are most interested in, which shows us there is a significant difference between average TV watching and radio listening in respondents. This suggests people who took this survey, on average, spend more time watching TV than listening to the radio. 
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/paired3.png?token=GHSAT0AAAAAABRLXP65TNB75XAEHOKKZTY4YRYM3IQ)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/paired3.png?token=GHSAT0AAAAAABRLXP64IU7SPSXGGINQWB6AYSEGKQA)
 
 ### Challenge 4: Run a paired samples t-test
 
@@ -236,18 +236,18 @@ In this example we are interested in finding out if different legal marital stat
 
 To run a one-way ANOVA we start by going to analyze -> compare means -> one-way ANOVA.
  
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/oneway1.png?token=GHSAT0AAAAAABRLXP65CWFQP6SH5OYZPO4AYRYM3XQ)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/oneway1.png?token=GHSAT0AAAAAABRLXP65ZDB4GNEVYD4YHEB6YSEGKWQ)
 
 When the one-way ANOVA dialog box appears, we first move the variables we want to test on. TV watching goes to dependent list, and legal marital status goes to factor. 
 
 We will want to add some extra elements to our one-way ANOVA; see images below. First we select *options*, and tick the descriptive, homogeneity, and means plot. Then we want to select *Post hoc* and select *Tukey*; post hoc tests help us to find out if we have a significant result, where this difference occurred. 
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/oneway2.png?token=GHSAT0AAAAAABRLXP65W6Y6N734RE7CXPJMYRYM37Q)
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/oneway3.png?token=GHSAT0AAAAAABRLXP64HE3EUOC3X4T6VNPEYRYM4IA)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/oneway2.png?token=GHSAT0AAAAAABRLXP65XYMLVLIILTYAMB7CYSEGK4Q)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/oneway3.png?token=GHSAT0AAAAAABRLXP65S2YLV4PRWLBPKAO2YSEGLDA)
 
 Now select ok to run the one-way ANOVA, and you should get several tables in your output viewer. In the image below we have highlighted two key things to look at. The green box shows us the ANOVA result, which has a *sig* (p value) less than 0.000, so very significant. The post hoc tests show us the interactions between each of the groups (like a t-test). The blue box shows us a significant post hoc test, suggesting our significant ANOVA result was, in part, driven by the difference mean TV watching time between those who are legally married and those that are widowed. 
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/oneway4.png?token=GHSAT0AAAAAABRLXP64HVUSMR54EACIBYQGYRYM5GA)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/oneway4.png?token=GHSAT0AAAAAABRLXP65SFPSNJXDJWMPGL76YSEGLKA)
 
 Have a look at the rest of the post hoc tests to see if you can see any other significant interactions. 
 
@@ -278,21 +278,21 @@ For this example, we can expand our paired-samples t-test example. We want to te
 
 To run a repeated measures ANOVA we go to analyze -> general linear model -> repeated measures.
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/repeat1.png?token=GHSAT0AAAAAABRLXP64YS7Q6TJV5AC6ZB3QYRYM5TQ)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/repeat1.png?token=GHSAT0AAAAAABRLXP642CMXTO5Z754BYPUQYSEGLRQ)
 
 A dialog box will appear and ask you to define your factors. This is asking you to tell SPSS how many related variables you will be comparing. In this case, we have made a factor called habits, with three levels (we have three variables). Select *add* once you've add the information, and then define. 
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/repeat2.png?token=GHSAT0AAAAAABRLXP65ARMSZPNFW4IDT4JUYRYM6LA)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/repeat2.png?token=GHSAT0AAAAAABRLXP64WB3E2HLXFL3TC3XOYSEGLWQ)
 
 We now get a familiar dialog box, this time for repeated measures ANOVA. Add the TV, radio, and newspaper variables as your within-subject factors. In options, select descriptives and homogeneity tests. Select ok and run your repeated measures ANOVA. 
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/repeat3.png?token=GHSAT0AAAAAABRLXP64CWE4XHOOPMC26VMAYRYM6VQ)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/repeat3.png?token=GHSAT0AAAAAABRLXP65LQ6F67AGUBNAAUY4YSEGL4A)
 
 You will see several tables appear, the two you are most interested in are shown in the image below. You will notice there are several tests, shown in the green box in the image below; to know which test to run, check out [this useful flow chart](https://www.spss-tutorials.com/spss-repeated-measures-anova-2-within-subjects-factors/#sphericity-flowchart). 
 
 Using this flow chart, we would use the huynh-feldt test. In this particular case, all tests are significant, telling us there is a significant difference between respondents TV, reading, and newspaper habits. 
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/repeat4.png?token=GHSAT0AAAAAABRLXP6576E2YQE4BHSTSBICYRYM66A)
+![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/repeat4.png?token=GHSAT0AAAAAABRLXP6553ZT2P4EEC6LKQEQYSEGMBQ)
 
 ### Challenge 6: Run a repeated measures ANOVA
 
