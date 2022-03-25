@@ -56,11 +56,11 @@ We will start our journey from the most basic model called **simple linear regre
 
 As we are building a simple linear regression we need to select **one** predictor (independent variable) that we will use to predict car prices. For now, we will be using only continuous variables to predict the car price. To understand which one to select for our model we will do two important things:
 
-1. Calculate correlation coefficients between variables and the car price  
+1) Calculate correlation coefficients between variables and the car price  
 
 You can do it by going to `SPSS -> Analyze –> Correlate -> Bivariate`. For all variables that you put into the **Variables** box, SPSS will compute pairwise correlations. The output of this will be a symmetric correlation matrix. As we do not need to see it fully we can tick the **Show only the lower triangle** box and click **OK**. Once you click **OK** you will see a table. For each pair of variables, it shows (1) the correlation coefficient, (2) the significance level, (3) the number of observations used to calculate the coefficient. Also, SPSS will mark those coefficients that are significant with asterisks. One asterisk means the correlation is significant at the **0.05 level**, two asterisks that it is significant at the **0.01 level**.
-
-2. Plot variables against car prices in a scatter plot
+ 
+2) Plot variables against car prices in a scatter plot
 
 You can create scatter plots in two ways: 
  - `SPSS -> Graphs –> Legacy Dialogs -> Scatter/Dot... -> Simple Scatter`. After you see a new window you can put the needed X and Y variables. However, in the case of building regressions, it might be tedious to build those scatter plots one by one for each variable. That's why we suggest another method below.
@@ -96,7 +96,9 @@ After examining the scatter plots that you have built in the last challenge you 
 We will not go into much detail here as it is beyond the scope of this course, but here is a brief explanation of some of the numbers in those tables:
 
 **R<sup>2</sup>** - the share of variance of the dependent variable "explained" by the independent variables, i.e., to what extent the chosen predictors explain the changes in the dependent variable.
+
 **Constant** (intercept) - the expected value of the dependent variable if all predictors are equal to zero.
+
 **Coefficients** show the change of a dependent variable if the independent variable changes by 1 unit. In our example, the unstandardized coefficient for the engine size will show the car price will increase on average by 167.698, if you increase the size of the car engine by 1 unit.
 
 ## Multiple linear regression <a name = "multiple"></a>
@@ -114,10 +116,6 @@ Now it's time for more predictors! Using the scatter plots that you have built f
 ---
 
 When interpreting coefficients for the multiple linear regressions do remember that a coefficient shows a change of a dependent variable if the independent variable changes by 1 unit *holding all the other independent variables constant*. The last part is very important as we must see these coefficients as being independent of others. 
-
-## Predictions with regression <a name = "pred"></a>
-
-
 
 ## Creating dummy variables <a name = "dummy"></a>
 
@@ -223,16 +221,12 @@ For extra information explaining logistic regression, have a look at [this helpf
 
 ### Challenge 5: Run logistic regression
 
-We will be using the dummy variables you created in the previous exercise.
+Run a logistic regression using your `dummy_price` variable as your dependent variable.
 
-Run a binary logistic regression using your `dummy_price` variable as your dependent variable. Add the following covariates:  
+Use the independent variables you used in your multiple linear regression as well as the two dummy variables you just made: 
 
 * `dummy_rear_wheel`
 * `dummy_four_wheel`
-* `horsepower`
-* `peakrpm`
-* `citympg`
-* `highwaympg`
 
 Discuss with the person next to you or in your breakout room: 
 
@@ -241,6 +235,58 @@ Discuss with the person next to you or in your breakout room:
 * Of those significant variables, what do the coefficients and log odds mean?  
 
 What is your hypothesis on what outcome you are expecting? Do your results allow you to reject or accept the null hypothesis?
+
+## Predictions with regression <a name = "pred"></a>
+
+One of the useful features of linear regression is to use it to make predictions on future data. We do this by using the linear regression equation and the *constant* outputs of our regression model. 
+
+**Simple linear regression equation**  
+$Y_i$ = $\beta$0 + $\beta$1$X_i$
+
+In english: Y equals Constant (dependent variable) + Independent variable
+
+As an example we can use our simple linear regression model from earlier. Say we wanted to find out the estimated price of a car with an engine size of 150, our equation would look like:
+
+Y = Constant + (engine size coefficient * 150)
+
+Y = -8005.446 + (167.698 * 150)
+
+Y (estimated price of car) = 17149.25
+
+---
+
+**Multiple linear regression equation**  
+$Y_i$ = $\beta$0 + $\beta$1$X_i$ + $\beta$2$X_i$ + $\beta$3$X_i$
+
+In english: Y equals Constant (dependent variable) + first Independent variable + second Independent variable + third Independent variable
+
+For our multiple linear regression, if we used engine size, horsepower, and weight (no baggage), and we wanted to know the price of a car that had:
+* engine size of 150
+* weight of car (no baggage) of 3000
+* horsepower of 150
+
+Y = Constant + (engine size coefficient * 150) + (weight of car * 3000) + (horsepower * 150)
+
+Y = -13463.789 + (84.880 * 150) + (4.263 * 3000) + (48.747 * 150)
+
+Y (estimated price of car) = 19369.26
+
+### Challenge 6: Make your own predictions with linear regression
+
+Run a new multiple linear regression model with the following parameters:  
+
+* **dependent variable**: Price of car
+* **independent variables**: horsepower and engine size
+
+Using the outputs from this model, and the formulas and examples above, try and predict the price of a car if:
+
+* horsepower is 200
+* engine size is 170
+
+Now try to predict price if: 
+
+* horsepower is 90
+* engine size is 70
 
 ## Final challenge — complete the course survey
 
