@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>SPSS_md_1_chapter</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+  body {
+    padding: 2cm; 
+  }
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">DSL SPSS</h1>
+
+<h2 id="toc_1">Part I: Foundations of data management</h2>
+
+<p>Hello and welcome to the first SPSS workshop from the Digital Skills Lab at LSE. It is the first out of four workshops that will enable you to gain fundamental skills of working with SPSS. 
+This session is dedicated to the fundamentals of data management. By the end of this session, you will learn how to:</p>
+
+<ul>
+<li>open existing SPSS datasets</li>
+<li>work with SPSS interface</li>
+<li>import data from CSV and Excel files to SPSS</li>
+<li>process imported datasets</li>
+<li>recode variables</li>
+<li>compute new variables</li>
+</ul>
+
+<p>It may sound like a lot, but it will take less than it seems. Let’s go through them one by one. </p>
+
+<h2 id="toc_2">Table of Contents</h2>
+
+<ul>
+<li><a href="#spss_data">Opening SPSS datasets</a></li>
+<li><a href="#interface">SPSS interface</a></li>
+<li><a href="#csv_data">Importing data from CSV and Excel</a></li>
+<li><a href="#recoding">Recoding variables</a></li>
+<li><a href="#computing">Computing variables</a></li>
+<li><a href="#survey">Course survey</a></li>
+</ul>
+
+<h3 id="toc_3">Opening SPSS datasets <a name = "spss_data"></a></h3>
+
+<p>There is a high chance that you will be using a dataset that is already saved in the SPSS format, so you do not need to do any preprocessing and can use the file straight away. SPSS uses <code>.sav</code> extensions, and, for instance, the file that we will be using for our workshops is called <strong>ESS5GB.sav</strong>. This comes from the ESS (<a href="https://www.europeansocialsurvey.org">European Social Survey</a>, which is used in a lot of research (and may be useful in yours). We simply downloaded these data from the ESS site in the SPSS format. </p>
+
+<p>You can use this file now. Simply double-click the <strong>ESS5GB.sav</strong> and wait till it loads (it might take some time). Once it is open you will see two windows opened:</p>
+
+<ol>
+<li><strong>The data editor</strong>
+This window is for you to access your data, manipulate it and look through it.</li>
+<li><strong>The output</strong>
+This is an output window. SPSS warnings, messages, and (what&#39;s important) all the results of your operations will be shown in this window.</li>
+</ol>
+
+<p>We will now explore the first one a little more thoroughly. The output window will be most relevant once we start conducting some analysis. </p>
+
+<h3 id="toc_4">SPSS interface <a name = "interface"></a></h3>
+
+<p>Let&#39;s explore the interface of the data editor window. You should see something similar to this:</p>
+
+<p><img src="./img/data_edit.png" alt="data editor"></p>
+
+<p>You can see two buttons at the bottom of this window that says: &quot;Data View&quot; and &quot;Variable View&quot;. Go ahead and click on the first one. </p>
+
+<h3 id="toc_5">Data View</h3>
+
+<p>It opens a data view of your dataset. Here you can see and manually change all the observations. You can think of that as an Excel spreadsheet, where each row represents one observation (for instance, a person you surveyed) and each column is a variable that stores some information about those observations (for instance, the age of your respondents or their salary). </p>
+
+<h3 id="toc_6">Variable View</h3>
+
+<p>Let&#39;s now click on &quot;Variable View&quot; at the bottom of this window and explore it. This section stores information on the variables that you have in your dataset. Each variable has several characteristics. We provided comments on some of the most used ones. You will use this information for the challenge below.</p>
+
+<ol>
+<li><strong>Name</strong> - the name of the variable 
+&gt; It is usually a code short name for a variable. An explanation of what it stores is usually in <strong>Label</strong>.</li>
+<li><strong>Type</strong> - a data type of the variable. The way it stores information (e.g., numbers, texts, dates, etc.)</li>
+<li><strong>Width</strong> - the length of a value displayed (e.g., a number of digits, a string length)</li>
+<li><strong>Decimals</strong> - the number of decimals used after a decimal point</li>
+<li><strong>Label</strong> - a label that describes what the variable stores
+&gt; This is where you would store an elaborate description of what this variable contains. </li>
+<li><strong>Values</strong> - all possible values that this variable can take
+&gt; This parameter is used for categorical variables. If you double-click the values box for a variable you will see a button with 3 dots:
+<img src="./img/values.png" alt="values button"> 
+&gt; After clicking on this button you will see a new window. In this window, you can create new values for a categorical variable. For instance, you can create a variable that records whether a person is left or right-handed. You would create a value 1 and label it as &quot;right-handed&quot; and value 2 and label it as &quot;left-handed&quot;. To do that you will need to create a value and a corresponding value in the window that opened and click &quot;Add&quot;.</li>
+<li><strong>Missing</strong> - the codes for missing values (for instance, people can code 997 as a rejection to answer and 999 no answer.)</li>
+<li><strong>Columns</strong> - the width of each column in the Data View window</li>
+<li><strong>Allign</strong> - the allignemnt of cells&#39; content</li>
+<li><strong>Measure</strong> - a type of measurement that variable uses, can be Scale, Ordinal and Nominal 
+&gt; This is one of the key parameters of a variable that defines how SPSS will treat it. Failing to correctly identify a type of measurement can result in wrong calculations. There are three types of variables used in SPSS:
+&gt; 1. <strong>Scale</strong> Scale variables or so-called interval variables imply that there is an interval and a variable can take any value in this interval. For instance, temperature or age. You can be 30 years old, you can be 30,5 years old, but also it is definitely possible that you are 30.003 years old. The same applies to temperature, height, years of education, and so on. 
+&gt; 2. <strong>Ordinal</strong> An ordinal variable implies creating separate categories that are somehow <strong>ordered/ranked</strong>. For instance, if you have a variable that stores people&#39;s highest achieved level of education, where 1 is High School, 2 is a Bachelor&#39;s degree and 3 is a Master&#39;s degree. They are all ranked: each one is higher than the next one. 
+&gt; 3. <strong>Nominal</strong> A nominal variable implies creating categories that are <strong>NOT</strong> in any way <strong>ranked</strong>. For instance, right and left-handed people are two categories. These categories do not have any order/hierarchy. </li>
+<li><strong>Role</strong> - the role of the variable in your analysis</li>
+</ol>
+
+<hr>
+
+<h3 id="toc_7">Challenge 1: Creating variables</h3>
+
+<p>Now it&#39;s time for your first challenge! Go to the <strong>Variable View</strong> and create 3 variables (to do it simply scroll down all the variables and click on the first empty row in <strong>Variable View</strong>):</p>
+
+<ol>
+<li><strong>Name</strong>: height, <strong>Label</strong>: Person&#39;s height, <strong>Values</strong>: None (as it&#39;s a scale variable), <strong>Measure</strong>: Scale (To change the Measure, simply click on the corresponding cell)</li>
+<li><strong>Name</strong>: pln_class, <strong>Label</strong>: Plane ticket class, <strong>Values</strong>: 1-First, 2-Second, 3-Third, <strong>Measure</strong>: Ordinal</li>
+<li><strong>Name</strong>: fav_col, <strong>Label</strong>: Favorite colour, <strong>Values</strong>: 1-Red, 2-Green, 3-Blue, <strong>Measure</strong>: Nominal</li>
+</ol>
+
+<hr>
+
+<h3 id="toc_8">Importing data from CSV and Excel <a name = "csv_data"></a></h3>
+
+<p>Now when you have a basic understanding of how SPSS looks and works, we can take one step further and explore how to import spreadsheets into SPSS. During the years of teaching SPSS, we encountered a question of how to import <code>.csv</code> or <code>.xlsx</code> files into SPSS. Indeed, it&#39;s a very useful skill, because a lot of datasets are stored as Excel or CSV (Comma-Separated Values) files. To do that go to <code>SPSS -&gt; File –&gt; Import Data -&gt; ...</code></p>
+
+<ol>
+<li><strong>Excel</strong></li>
+</ol>
+
+<p>Let&#39;s consider our example. Go to <code>SPSS -&gt; File –&gt; Import Data -&gt; Excel</code> and let&#39;s import a file called <code>dem_data.xlsx</code>. You should see this window after selecting this file and clicking &quot;Open&quot;:</p>
+
+<p><img src="./img/read_excel.png" alt="read excel"></p>
+
+<p>You can see that you can select a sheet from which to read the data and then we have several parameters that are quite straightforward. Let&#39;s click &quot;OK&quot; once we are satisfied with our settings. Now go to the variable view and look at the <strong>Measure</strong> settings SPSS used. Are they correct? </p>
+
+<ol>
+<li><strong>CSV</strong></li>
+</ol>
+
+<p>Now let&#39;s take the same file but save it as a CSV file. Go to <code>SPSS -&gt; File –&gt; Import Data -&gt; CSV</code> and let&#39;s import a file called <code>dem_data.csv</code>. Now after clicking &quot;Open&quot; we will see a different window:</p>
+
+<p><img src="./img/read_csv.png" alt="read csv"></p>
+
+<p>When importing CSV one should be careful, because <strong>columns are separated by a special symbol</strong> (usually a comma). You can see in the preview of our data that they are indeed separated by commas, and we select it in our <code>Delimiter between values</code> parameter. For your own research also pay attention to how decimal points are marked (commas or periods in the <code>Decimal symbol</code> parameter). Let&#39;s click &quot;OK&quot; once we are satisfied with our settings. Are the <strong>Measure</strong> settings here are correct again?</p>
+
+<ol>
+<li><strong>You can use other dataset types to import to SPSS using the same sequence of steps again</strong>.</li>
+</ol>
+
+<p><strong>Note</strong> that you can open multiple datasets at the same time. Should you do so, pay attention to what dataset you are working at the moment. </p>
+
+<hr>
+
+<h3 id="toc_9">Challenge 2: Correcting imported datasets</h3>
+
+<p>As your second task:</p>
+
+<ol>
+<li>Import the <code>dem_data</code> in either Excel or CSV format</li>
+<li>Check if the <strong>Measure</strong> settings are correct</li>
+<li>Add labels to your variables, namely &quot;Respondent&#39;s salary&quot;, &quot;Age of a respondent&quot;, and &quot;Gender&quot; to corresponding variables</li>
+<li>For the gender variables add values: 1 - Male, 2 - Female, 3 - Other (specified)</li>
+</ol>
+
+<hr>
+
+<h3 id="toc_10">Recoding variables <a name = "recoding"></a></h3>
+
+<p>Now as we learned how to open datasets and import them from other file formats we can finally work with data. The first thing to do with data is preprocessing, so in this section, we will take one step into that and learn how to <strong>recode</strong> variables. There are many cases when it may be useful. For instance, you want to group your respondents into age groups. You want to have those that are younger than 30, from 31 to 50 and 50 and older. To do that, we can use SPSS functionality. </p>
+
+<p>Let&#39;s use our <strong>ESS5GB.sav</strong> file again (you can close the imported ones). Let&#39;s take the following path `SPSS -&gt; Transform –&gt; Recode into Different Variables. Recoding into Different Variables will create new recoded variables compared to Recode into Same Variables that will <strong>change the existing ones</strong>. We choose the former in order to <strong>avoid changing the original data</strong>. Once you click on Recode into Different Variables you will see the following window:</p>
+
+<p><img src="./img/recoding_window.png" alt="recode window"></p>
+
+<blockquote>
+<p><strong>Lifehack not to get lost in variables</strong>
+You can see that there is an overwhelming number of variables in this dataset. No to get lost in them right-click in the area of variables (like in the picture below) and select <code>Display Variable Names</code> and `Sort Alphabetically. This way you will have short names ordered in a nice order.</p>
+</blockquote>
+
+<p><img src="./img/lifehack.png" alt="lifehack"></p>
+
+<p>We will be working with a variable called <code>agea</code> (Age of respondent...). Find and click on this variable (it will be highlighted in blue) and click on the blue arrow in the middle of the window so it moves to the box on the right like this:</p>
+
+<p><img src="./img/moved_var.png" alt="moved variable"></p>
+
+<p>As you can see, it now shows <code>agea ---&gt; ?</code> which means that SPSS wants you to name a new variable with recoded values. In order to do that provide it with a new name in the <code>Name</code> box in the <code>Output variable area</code> on the right. Let&#39;s call it <code>age_re</code> and give it a label of &quot;Age groups&quot;. Don&#39;t forget to click <strong>Change</strong> once you have given all the details of the new variable. Now all the recoded values will be stored in <code>age_re</code>.</p>
+
+<p>Now it&#39;s time for the actual recoding. Click on the <strong>Old and New Values...</strong> button to create recoding rules. Once you click it you will see a new window. In this window, we can create rules for recoding. First, let&#39;s create group 1 that is aged 30 and below. For that let&#39;s set these settings here:</p>
+
+<p><img src="./img/age_group_1.png" alt="age group 1"></p>
+
+<p>Once you input the values, find the <strong>Add</strong> button and click it. It should show a new line in the <code>Old --&gt; New</code> box. If it did, you did everything correctly. Now let&#39;s create group 2 aged 31 to 50 like this. </p>
+
+<p><img src="./img/age_group_2.png" alt="age group 2"></p>
+
+<p>Don&#39;t forget to click <strong>Add</strong> again for that one. The last group will be the ones 51 and older. We can do it like this:</p>
+
+<p><img src="./img/age_group_3.png" alt="age group 3"></p>
+
+<p>Perfect! Now we can click <strong>Continue</strong> in this window and the next one. Once you did it SPSS will navigate you to the <strong>Output</strong> window that should look somewhat like this:</p>
+
+<p><img src="./img/recode_output.png" alt="output recode"></p>
+
+<p>In this window, SPSS will show you what code it executes. In this case, it basically told us:</p>
+
+<blockquote>
+<p><em>Hey! I recoded the agea variable into age_re using the rules you provided it and labeled it &quot;Age groups&quot;.</em></p>
+</blockquote>
+
+<p>Go ahead and check whether the values are recoded correctly by switching to *<em>Data View</em> and exploring the values of <code>agea</code> and <code>age_re</code>. </p>
+
+<hr>
+
+<h3 id="toc_11">Challenge 3: Recoding a variable</h3>
+
+<p>There are several variables evaluating trust in the ESS5GB.sav data. Each measure trust from 0 (No trust) to 10 (Complete trust). Take the variable <code>trstprl</code> (Trust in country&#39;s parliament) in ESS5GB.sav and recode it into a new variable with 3 categories:</p>
+
+<ol>
+<li>Low trust: Values from 0 to 4</li>
+<li>Moderate trust: Values from 5 to 7</li>
+<li>High trust: Values from 8 to 10</li>
+</ol>
+
+<p>Not only create new categories as 1,2 and 3, but label them as Low, Middle, and High trust in the <strong>Variable view</strong>. </p>
+
+<hr>
+
+<h3 id="toc_12">Computing variables <a name = "computing"></a></h3>
+
+<p>Good job! We are almost done for today! The last part of our today&#39;s session is dedicated to calculating new variables. You might need it, for instance, when you are creating indices and want to give different weights to different variables. Let&#39;s consider an example.</p>
+
+<p>We have several variables evaluating trust in political institutions. Let&#39;s say we wanted to calculate some indicators of the trust in the local institutions: parliament, legal system, and police. Let&#39;s calculate the mean of all of them for each person. To do that we would go to <code>SPSS -&gt; Transform –&gt; Compute Variable</code>. You will see something like this:</p>
+
+<p><img src="./img/compute_var.png" alt="compute var"></p>
+
+<p>In this window, we can create variables that are a product of calculations and use other variables. Let&#39;s create a new one called <code>trst_local</code> (put it in the <strong>Target variable</strong> box). You can then see a small equality sign and a <strong>Numeric expression</strong> box. In this box, you can provide a formula to compute your new variable. You can use simple maths operations, but also can use functions. </p>
+
+<blockquote>
+<p>You can explore all functions by clicking <strong>All</strong> in the <strong>Function group</strong> box on the right. All the functions will appear in the <strong>Functions and Special Variables</strong> box.</p>
+</blockquote>
+
+<p>For instance, in our case, we need a function called <code>MEAN()</code>. In the brackets, we will give our variables that we want to find a mean of, namely trstprl, trstlgl, trstplc. In the end, we should get something like this:</p>
+
+<p><img src="./img/compute_var_result.png" alt="compute var"></p>
+
+<p>Go ahead, click <strong>OK</strong>, and check whether it actually conducted the calculation.</p>
+
+<hr>
+
+<h3 id="toc_13">Challenge 4: Computing a variable</h3>
+
+<p>The final task! Using <code>SPSS -&gt; Transform –&gt; Compute Variable</code> create a new variable called <code>trst_tot</code> that will be a sum of all trust variables in the database. </p>
+
+<hr>
+
+<h2 id="toc_14">Final challenge - complete the course survey <a name = "survey"><a/></h2>
+
+<p><a href="https://lse.eu.qualtrics.com/jfe/form/SV_eflc2yj4pcryc62?coursename=SPSS%201:%20Foundations%20of%20Data%20Management&amp;topic=SPSS&amp;link=&amp;prog=SR&amp;version=21-22&amp;link2=">Click this link to complete the survey</a></p>
+
+
+
+
+</body>
+
+</html>
