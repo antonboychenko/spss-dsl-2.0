@@ -98,7 +98,7 @@ As always you might wish to visualise your findings. For continuous variables th
 
 1. **Box-plots**: `SPSS -> Graphs –> Legacy Dialogs -> Boxplot...`. Next, you select **Simple** and **Summaries of separate variables**. After clicking **Define** you can put your variable(s) in the box called **Boxes Represent** and click **OK**. The elements of the boxplot are explained below:
 
-![boxplot](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/boxplot.png?token=GHSAT0AAAAAABRLXP65QQPD6ZPKIOPVPUJWYRYMPCA)
+![boxplot](img/boxplot.png)
 
 Source: [Understanding Boxplots](https://towardsdatascience.com/understanding-boxplots-5e2df7bcbd51)
 

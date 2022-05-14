@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>SPSS_md_4_chapter</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+  body {
+    padding: 2cm; 
+  }
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">DSL SPSS</h1>
+
+<h2 id="toc_1">Part IV: Regression analysis</h2>
+
+<p>Welcome to the fourth SPSS workshop from the Digital Skills Lab at LSE.</p>
+
+<p>In the last session, you have learned about inferential statistics. Now, it&#39;s time to take a step further and explore one of the most widely used data analytics tools <strong>regressions</strong>. Regressions allow you to (1) make inferences about associations between variables, (2) predict variables&#39; values. By the end of this session, you will learn how to:</p>
+
+<ul>
+<li>run correlations</li>
+<li>build scatter plots</li>
+<li>build simple and multiple linear regressions</li>
+<li>make predictions with linear regressions</li>
+<li>use categorical variables in regressions</li>
+<li>build logistic regression models</li>
+</ul>
+
+<p>We hope you will enjoy this workshop!</p>
+
+<h2 id="toc_2">Table of Contents</h2>
+
+<ul>
+<li><a href="#intro">Introduction to regression</a></li>
+<li><a href="#simple">Simple linear regression</a></li>
+<li><a href="#multiple">Multiple linear regression</a></li>
+<li><a href="#dummy">Dummy variables</a></li>
+<li><a href="#logistic">Logistic regression</a></li>
+<li> <a href="#pred">Predictions with regression</a></li>
+</ul>
+
+<h2 id="toc_3">Getting started</h2>
+
+<p>We will be using a new dataset today. It&#39;s a dataset containing information about different cars sourced from (<a href="https://www.kaggle.com/hellbuoy/car-price-prediction">Kaggle</a>). The data file that you will be using today is called <strong>cars.sav</strong>. </p>
+
+<p>Open this file now, either by double-clicking on the file in Finder (Mac) or Windows Explorer, or using <em>file -&gt; open -&gt; data</em> in SPSS. </p>
+
+<p>Follow the example steps provided, then have a go at the challenges for each section. </p>
+
+<h2 id="toc_4">Introduction to regression <a name = "intro"></a></h2>
+
+<p>Linear regressions are arguably the most popular data analysis tool in the world. People like it and use it a lot when they wish to understand relationships between variables. The idea behind <strong>any</strong> regression task is to predict a continuous numerical variable. In other words, we wish to understand an association between one or more <strong>predictors</strong> (other names: independent variables, features) and a continuous <strong>response variable</strong> (other names: dependent variable, target variable). </p>
+
+<p>Let&#39;s consider an example. You want to earn a lot of money and you are trying to understand what qualities you need to possess to achieve that. Your income is a continuous and numeric variable. Ideal! It means that we can run a regression model and understand what predicts people&#39;s salaries. It can be their education, their gender, number of Facebook friends, and so on.</p>
+
+<p>💡 Stop for a second and think what are the predictors and what is the response variable in this example. </p>
+
+<p>In our today&#39;s session, we are discussing <strong>linear</strong> regressions. They are called linear because they spot linear relationships between variables. Without going into much maths linear regressions aim to build a linear function that can explain a relationship between a variable and a response variable. Hence it will work well if data looks like this:</p>
+
+<p><img src="img/linear_reg.png" alt="linear relationship"></p>
+
+<p>and will perform poorly if data looks like this:</p>
+
+<p><img src="img/non_linear_reg.png" alt="non-linear relationship"></p>
+
+<p>If you wish to understand regression in more detail we would recommend this <a href="https://www.youtube.com/watch?v=nk2CQITm_eo">youtube video</a>. It explains the algorithm and a bit of maths behind linear regression models. </p>
+
+<h2 id="toc_5">Simple linear regression <a name = "simple"></a></h2>
+
+<p>We will start our journey from the most basic model called <strong>simple linear regression</strong>. Simple linear regression is a kind of linear regression that uses only one predictor. In our today&#39;s session, we will be working with a dataset that contains information about different cars. We will be trying to understand what characteristics of a car predict its <strong>price</strong> in the best way. </p>
+
+<p>As we are building a simple linear regression we need to select <strong>one</strong> predictor (independent variable) that we will use to predict car prices. For now, we will be using only continuous variables to predict the car price. To understand which one to select for our model we will do two important things:</p>
+
+<p>1) Calculate correlation coefficients between variables and the car price  </p>
+
+<p>You can do it by going to <code>SPSS -&gt; Analyze –&gt; Correlate -&gt; Bivariate</code>. For all variables that you put into the <strong>Variables</strong> box, SPSS will compute pairwise correlations. The output of this will be a symmetric correlation matrix. As we do not need to see it fully we can tick the <strong>Show only the lower triangle</strong> box and click <strong>OK</strong>. Once you click <strong>OK</strong> you will see a table. For each pair of variables, it shows (1) the correlation coefficient, (2) the significance level, (3) the number of observations used to calculate the coefficient. Also, SPSS will mark those coefficients that are significant with asterisks. One asterisk means the correlation is significant at the <strong>0.05 level</strong>, two asterisks that it is significant at the <strong>0.01 level</strong>.</p>
+
+<p>2) Plot variables against car prices in a scatter plot</p>
+
+<p>You can create scatter plots in two ways: 
+ - <code>SPSS -&gt; Graphs –&gt; Legacy Dialogs -&gt; Scatter/Dot... -&gt; Simple Scatter</code>. After you see a new window you can put the needed X and Y variables. However, in the case of building regressions, it might be tedious to build those scatter plots one by one for each variable. That&#39;s why we suggest another method below.
+ - <code>SPSS -&gt; Graphs –&gt; Regression Variable Plots</code>. In the new window, we would recommend putting a dependent variable into the <strong>Vertical-Axis Variables</strong> and potential predictors into the <strong>Horizontal-Axis Variables</strong>. Once you click <strong>OK</strong> it will show you scatter plots of all your variables plotted against your dependent variable. </p>
+
+<hr>
+
+<h3 id="toc_6">Challenge 1: Choosing a predictor</h3>
+
+<ul>
+<li>Find pair-wise correlations of all continuous variables in this dataset. What variables are associated with the car price?</li>
+<li>Plot all continuous variables against the car price. What variables are <strong>linearly</strong> associated with the car prices? Discuss it in the group. </li>
+</ul>
+
+<hr>
+
+<p>After completing the challenge you might notice that several variables are associated with the car price. However, some of the associations will not work well with linear regression. Take a look at the <code>highwaympg</code> variable (<em>Mileage on highway</em>) plotted against car price. </p>
+
+<p><img src="img/quadratic.png" alt="quadratic relationship"></p>
+
+<p>You will notice that the relationship is <strong>not</strong> linear. It&#39;s somewhat quadratic. Hence, building a linear regression model with <em>Mileage on highway</em> would be a bad idea as we assume linearity in this model. </p>
+
+<p>💡 Can you spot a variable that is linearly associated with the car price?</p>
+
+<p>Once we decided on the predictor that will be used we can finally build our model. To do that go to <code>SPSS -&gt; Analyze –&gt; Regression -&gt; Linear...</code>. In the new window you can put your dependent variable in the <strong>Dependent:</strong> box and all predictors into the <strong>Independent(s)</strong> one. The default settings will do the job for now, but you can always experiment with your model and the output. Once you click <strong>OK</strong> you will see several tables. <strong>Model Summary</strong> contains some quality metrics of the model including R<sup>2</sup>. <strong>ANOVA</strong> will show you the RSS and F-statistics. <strong>Coefficients</strong> shows the coefficients of the model including the intercept (Constant). </p>
+
+<hr>
+
+<h3 id="toc_7">Challenge 2: Your first model</h3>
+
+<p>After examining the scatter plots that you have built in the last challenge you might have noticed that <code>enginesize</code> (<em>Size of engine</em>) is linearly associated with the car price. Go ahead and build a simple linear regression model using <code>enginesize</code> as a predictor. What do you find? </p>
+
+<hr>
+
+<p>We will not go into much detail here as it is beyond the scope of this course, but here is a brief explanation of some of the numbers in those tables:</p>
+
+<p><strong>R<sup>2</sup></strong> - the share of variance of the dependent variable &quot;explained&quot; by the independent variables, i.e., to what extent the chosen predictors explain the changes in the dependent variable.</p>
+
+<p><strong>Constant</strong> (intercept) - the expected value of the dependent variable if all predictors are equal to zero.</p>
+
+<p><strong>Coefficients</strong> show the change of a dependent variable if the independent variable changes by 1 unit. In our example, the unstandardized coefficient for the engine size will show the car price will increase on average by 167.698, if you increase the size of the car engine by 1 unit.</p>
+
+<h2 id="toc_8">Multiple linear regression <a name = "multiple"></a></h2>
+
+<p>Multiple linear regression is a type of linear regression where we use more than one predictor. In SPSS it is done in a very similar manner by simply putting more variables into the <strong>Independent(s)</strong> box in the regression window. However, you might wish to change one thing there and run collinearity diagnostics. Multicollinearity is a phenomenon of predictors&#39; associations in-between each other. </p>
+
+<p>To add collinearity diagnostics go to <code>SPSS -&gt; Analyze –&gt; Regression -&gt; Linear...</code>, add all the variables that you want to the <strong>Independent(s)</strong> box. Then, click on <strong>Statistics</strong> and tick the box for <strong>Collinearity diagnostics</strong>. Once you click <strong>Continue</strong> and then <strong>OK</strong> you will see that now in the <em>Coefficients</em> table there are two new columns: <em>Tolerance</em> and <em>VIF</em>. The rule of thumb here is that if all the values in the VIF column are below 10, you are not experiencing multicollinearity. If you do, we would recommend running correlations between all the variables to find associated ones. We can also recommend to explore <a href="https://www.youtube.com/watch?v=IRVd4m8ulHs&amp;t=210s">this video</a> on how to read collinearity diagnostics in SPSS in more detail </p>
+
+<hr>
+
+<h3 id="toc_9">Challenge 3: More predictors</h3>
+
+<p>Now it&#39;s time for more predictors! Using the scatter plots that you have built find at least 2 more variables that are associated with the car price. Add them to the model and explore the results. </p>
+
+<hr>
+
+<p>When interpreting coefficients for the multiple linear regressions do remember that a coefficient shows a change of a dependent variable if the independent variable changes by 1 unit <em>holding all the other independent variables constant</em>. The last part is very important as we must see these coefficients as being independent of others. </p>
+
+<h2 id="toc_10">Creating dummy variables <a name = "dummy"></a></h2>
+
+<p>Dummy variables are <em>artificial</em> variables that take values of 0 or 1 to indicate the absence or presence of something.</p>
+
+<blockquote>
+<ul>
+<li>0 = absent</li>
+<li>1 = present </li>
+</ul>
+</blockquote>
+
+<p>This is very useful in regressions, which treat all independent variables as numerical. There are some different approaches to making dummy variables, depending on what data we have and what we want to do. </p>
+
+<p>First, we can take a numerical variable and make it a dummy variable depending on a certain condition. For example, if we were interested in knowing which participants were over a certain age, we can make a dummy variable to tell us who is and isn&#39;t; 1 means they are over 25 and 0 means they are under 25. </p>
+
+<table>
+<thead>
+<tr>
+<th><strong>Age</strong></th>
+<th><strong>over_25</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>26</td>
+<td>1</td>
+</tr>
+<tr>
+<td>49</td>
+<td>1</td>
+</tr>
+<tr>
+<td>19</td>
+<td>0</td>
+</tr>
+<tr>
+<td>17</td>
+<td>0</td>
+</tr>
+<tr>
+<td>56</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+<p>Second, if we have a categorical variable with more than two levels, we create multiple dummy variables to &quot;replace&quot; the original variable. By convention if you have two or more variables, one variable is not coded so we have a comparison point. For example, if we give people a choice of three ice cream flavours and they tell us their favourite (Vanilla, Chocolate, or Pistachio), we would make two dummy variables. In the table below we have used vanilla as our comparison point with dummy variables for pistachio and chocolate.</p>
+
+<table>
+<thead>
+<tr>
+<th><strong>Favourite_ice_cream</strong></th>
+<th><strong>dummy_pistachio</strong></th>
+<th><strong>dummy_chocolate</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Vanilla</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Chocolate</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Pistachio</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Vanilla</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Vanilla</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Chocolate</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+<p>How do we create dummy variables in SPSS? We go to <code>Transform -&gt; Compute Variable</code>. Target Variable is the name we call our dummy variable. Numeric expression is the condition we set to calculate our dummy variable. In the image below we call our dummy <code>dummy_var</code> and make it with a condition <code>variable &gt;= 25</code>. </p>
+
+<p><img src="img/comp_dummy.png" alt=""></p>
+
+<p>The green box shows the <em>conditional operators</em>, which allow us to make conditional statement. The table below shows what each of these mean. </p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center"><strong>Conditional operator</strong></th>
+<th style="text-align: center"><strong>Meaning</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">&lt;</td>
+<td style="text-align: center">Less than</td>
+</tr>
+<tr>
+<td style="text-align: center">&gt;</td>
+<td style="text-align: center">Greater than</td>
+</tr>
+<tr>
+<td style="text-align: center">&lt;=</td>
+<td style="text-align: center">Less than or equal to</td>
+</tr>
+<tr>
+<td style="text-align: center">&gt;=</td>
+<td style="text-align: center">Greater than or equal to</td>
+</tr>
+<tr>
+<td style="text-align: center">=</td>
+<td style="text-align: center">Equal to</td>
+</tr>
+<tr>
+<td style="text-align: center">~=</td>
+<td style="text-align: center">Not equal to</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="toc_11">Challenge 4: Make dummy variable</h3>
+
+<p>We will make some dummy variables to use in our logistic regression. </p>
+
+<p>First we want to make a dependent variable. Like our linear regression we will use price as the dependent variable, but we will make a dummy to tell us which cars are expensive; we can do this many ways but for this exercise we will classify <em>expensive</em> cars as any over the mean price of all the cars.</p>
+
+<blockquote>
+<p>The mean price is 13276 dollars, we can round this to 13500 dollars</p>
+</blockquote>
+
+<ol>
+<li>Make a variable called dummy_price, where car prices that are greater than or equal to 13500 become 1 (expensive cars)</li>
+</ol>
+
+<p>Next, we are interested in if type of wheel drive effects price of the car. We will need to make the <code>drive_wheel</code> variable into two dummy variables: one for rear wheel drive and one for four wheel drive, our comparison variable will be front wheel drive. </p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center"><strong>Drive</strong></th>
+<th style="text-align: center"><strong>Number</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">four</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr>
+<td style="text-align: center">front</td>
+<td style="text-align: center">2</td>
+</tr>
+<tr>
+<td style="text-align: center">rear</td>
+<td style="text-align: center">3</td>
+</tr>
+</tbody>
+</table>
+
+<ol>
+<li><p>Make dummy variables called <code>dummy_rear_wheel</code> (all rear wheel cars become 1) and <code>dummy_four_wheel</code> (all four wheel cars become 1). Use the table above for reference</p></li>
+<li><p>Go to the variable view and add values to your <code>dummy_sales</code> variable. Values of 0 should be <em>normal</em> and 1 should be <em>expensive</em> </p></li>
+<li><p>Finally, check all of your dummy variables have performed their calculations correctly. For example, row 1 should have 0 for <code>dummy_price</code>, 1 for <code>dummy_rear_wheel</code>, and 0 for <code>dummy_four_wheel</code></p></li>
+</ol>
+
+<h2 id="toc_12">Binary Logistic regression <a name = "logistic"></a></h2>
+
+<p>Binary Logistic regression is like linear regression but the dependent variable (DV) has two categories such as present and not present.  If your data isn&#39;t already set up to have a binary dependent variable, that is when we make a dummy variable like we did in the previous chapter.  </p>
+
+<p>To run a binary logistic regression in SPSS we go to <code>Analyse -&gt; Regression -&gt; Binary logistic</code>. The dependent variable (called Dependent in SPSS) is your binary variable. Your independent variables go into the section called block. </p>
+
+<p>As an example, we might be interested in understanding if mileage in the city and mileage on the highway are good predictors for the fuel system of a car. We can run a logistic regression with fuel system as our dependent variable, and mileage in city and mileage on highway as our independent variables.  </p>
+
+<p>When you run a logistic regression in SPSS you get a lot of outputs. We are most interested in the section that is <em>Block 1</em>. See the image below from the output of our example logistic regression.</p>
+
+<p><img src="img/log_reg.png" alt=""></p>
+
+<blockquote>
+<p>It is important to note diesel fuel system is our comparison point, which means our model will try to determine if a car is, or is not, a diesel fuelled car. </p>
+</blockquote>
+
+<p>The first thing we can note is both independent variables in our model are significant (see <code>Sig.</code> the <em>Variables in the Equation</em> table). This means there is likely a relationship between these two variables and the fuel system of a car. </p>
+
+<p>The blue box shows the model summary with the pseudo R squared, which measures how much variance is explained by the model. It is easier to use the <em>Nagelkerke R Square</em>, which has a range of 0-1. In our example, with 0.228 suggests a small amount of variance is explained. </p>
+
+<p>The red box shows the coefficients, which means for every one unit increase in the variable the model predicts an increase/decrease in the log odds by the value of <em>B</em>. We see that milage in city decreases the log odds of being a diesel fuel car by -0.59 units, whereas mileage on highway increases the log odds of being a diesel fuel car by 0.46. </p>
+
+<p>The green box shows the odds ratios, that give us the odds of falling into target group or not; in our example the target group is diesel, and non-target is gas. Mileage in city odds ratio is 0.55 suggesting cars with good city mileage are 0.55 times less likely to be diesel. Mileage on highway shows the opposite, cars with good highway mpg are 1.5 times more likely to be diesel. </p>
+
+<blockquote>
+<p>To summarise: </p>
+
+<ul>
+<li>1 or near 1 means odds of falling into target group equal to falling into non-target group<br></li>
+<li>Greater than 1 means odds of falling into target group are greater than falling into non-target group<br></li>
+<li>Less than 1 means odds of falling into target group are less than falling into non-target group<br></li>
+</ul>
+</blockquote>
+
+<p>Finally, the classification table tells us how good is our model at predicting the fuel system. The overall percentage tells us our model has 89.8% accuracy. </p>
+
+<p>For extra information explaining logistic regression, have a look at <a href="https://www.youtube.com/watch?v=yIYKR4sgzI8">this helpful video (8 minutes long) after the workshop</a>. </p>
+
+<h3 id="toc_13">Challenge 5: Run logistic regression</h3>
+
+<p>Run a logistic regression using your <code>dummy_price</code> variable as your dependent variable.</p>
+
+<p>Use the independent variables you used in your multiple linear regression as well as the two dummy variables you just made: </p>
+
+<ul>
+<li><code>dummy_rear_wheel</code></li>
+<li><code>dummy_four_wheel</code></li>
+</ul>
+
+<p>Discuss with the person next to you or in your breakout room: </p>
+
+<ul>
+<li>How much variance is explained? </li>
+<li>Which variables are significant? </li>
+<li>Of those significant variables, what do the coefficients and log odds mean?<br></li>
+</ul>
+
+<p>What is your hypothesis on what outcome you are expecting? Do your results allow you to reject or accept the null hypothesis?</p>
+
+<h2 id="toc_14">Predictions with regression <a name = "pred"></a></h2>
+
+<p>One of the useful features of linear regression is to use it to make predictions on future data. We do this by using the linear regression equation and the <em>constant</em> outputs of our regression model. </p>
+
+<p><strong>Simple linear regression equation</strong><br>
+$Y<em>i$ = $\beta$0 + $\beta$1$X</em>i$</p>
+
+<blockquote>
+<p>In english: Y equals Constant (dependent variable) + Independent variable</p>
+</blockquote>
+
+<p>As an example we can use our simple linear regression model from earlier. Say we wanted to find out the estimated price of a car with an engine size of 150, our equation would look like:</p>
+
+<p>Our equation would like something like this:</p>
+
+<p>Y = Constant + (engine size coefficient * 150)</p>
+
+<p>Then we add in the coefficient values, our full equation looks like this:</p>
+
+<p>Y = -8005.446 + (167.698 * 150)</p>
+
+<p>Y (estimated price of car) = 17149.25</p>
+
+<hr>
+
+<p><strong>Multiple linear regression equation</strong><br>
+$Y<em>i$ = $\beta$0 + $\beta$1$X</em>i$ + $\beta$2$X<em>i$ + $\beta$3$X</em>i$</p>
+
+<blockquote>
+<p>In english: Y equals Constant (dependent variable) + first Independent variable + second Independent variable + third Independent variable</p>
+</blockquote>
+
+<p>For our multiple linear regression, if we used engine size, horsepower, and weight (no baggage), and we wanted to know the price of a car that had:</p>
+
+<ul>
+<li>engine size of 150</li>
+<li>weight of car (no baggage) of 3000</li>
+<li>horsepower of 150</li>
+</ul>
+
+<p>Our equation would like something like this:</p>
+
+<p>Y = Constant + (engine size coefficient * 150) + (weight of car coefficient * 3000) + (horsepower coefficient * 150)</p>
+
+<p>Then we add in the coefficient values, our full equation looks like this:</p>
+
+<p>Y = -13463.789 + (84.880 * 150) + (4.263 * 3000) + (48.747 * 150)</p>
+
+<p>Y (estimated price of car) = 19369.26</p>
+
+<h3 id="toc_15">Challenge 6: Make your own predictions with linear regression</h3>
+
+<p>Run a new multiple linear regression model with the following parameters:  </p>
+
+<ul>
+<li><strong>dependent variable</strong>: Price of car</li>
+<li><strong>independent variables</strong>: horsepower and engine size</li>
+</ul>
+
+<p>Using the outputs from this model, and the formulas and examples above, try and predict the price of a car if:</p>
+
+<ul>
+<li>horsepower is 200</li>
+<li>engine size is 170</li>
+</ul>
+
+<p>Now try to predict price if: </p>
+
+<ul>
+<li>horsepower is 90</li>
+<li>engine size is 70</li>
+</ul>
+
+<h2 id="toc_16">Final challenge — complete the course survey</h2>
+
+<p><a href="https://lse.eu.qualtrics.com/jfe/form/SV_eflc2yj4pcryc62?coursename=SPSS%204:%20Regressions%20in%20SPSS&amp;topic=SPSS&amp;link=&amp;prog=SR&amp;version=21-22&amp;link2=">Click this link to complete the survey</a></p>
+
+
+
+
+</body>
+
+</html>

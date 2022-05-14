@@ -42,11 +42,11 @@ Let's consider an example. You want to earn a lot of money and you are trying to
 
 In our today's session, we are discussing **linear** regressions. They are called linear because they spot linear relationships between variables. Without going into much maths linear regressions aim to build a linear function that can explain a relationship between a variable and a response variable. Hence it will work well if data looks like this:
 
-![linear relationship](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/linear_reg.png?token=GHSAT0AAAAAABRLXP64BGZOVHKS5H2BZUKQYSHFJUA)
+<img src="img/linear_reg.png" alt="drawing" width="300"/>
 
 and will perform poorly if data looks like this:
 
-![non-linear relationship](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/non_linear_reg.png?token=GHSAT0AAAAAABRLXP65OGK5XO4BXBGESWDUYSHFJ7A)
+<img src="img/non_linear_reg.png" alt="drawing" width="300"/>
 
 If you wish to understand regression in more detail we would recommend this [youtube video](https://www.youtube.com/watch?v=nk2CQITm_eo). It explains the algorithm and a bit of maths behind linear regression models. 
 
@@ -77,7 +77,7 @@ You can create scatter plots in two ways:
 
 After completing the challenge you might notice that several variables are associated with the car price. However, some of the associations will not work well with linear regression. Take a look at the `highwaympg` variable (*Mileage on highway*) plotted against car price. 
 
-![quadratic relationship](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/quadratic.png?token=GHSAT0AAAAAABRLXP64S5UKGWIO3P4W2O7YYSHFKIQ)
+![quadratic relationship](img/quadratic.png)
 
 You will notice that the relationship is **not** linear. It's somewhat quadratic. Hence, building a linear regression model with *Mileage on highway* would be a bad idea as we assume linearity in this model. 
 
@@ -150,7 +150,7 @@ Second, if we have a categorical variable with more than two levels, we create m
 
 How do we create dummy variables in SPSS? We go to `Transform -> Compute Variable`. Target Variable is the name we call our dummy variable. Numeric expression is the condition we set to calculate our dummy variable. In the image below we call our dummy `dummy_var` and make it with a condition `variable >= 25`. 
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/comp_dummy.png?token=GHSAT0AAAAAABRLXP64J3IIZ3UDA5GFPSOMYSHFKWQ)
+![](img/comp_dummy.png)
 
 The green box shows the *conditional operators*, which allow us to make conditional statement. The table below shows what each of these mean. 
 
@@ -197,7 +197,7 @@ As an example, we might be interested in understanding if mileage in the city an
 
 When you run a logistic regression in SPSS you get a lot of outputs. We are most interested in the section that is *Block 1*. See the image below from the output of our example logistic regression.
 
-![](https://raw.githubusercontent.com/antonboychenko/spss-dsl-2.0/main/img/log_reg.png?token=GHSAT0AAAAAABRLXP65BDRFFEC3KEXFKOMWYSHFLCA)
+![](img/log_reg.png)
 
 >It is important to note diesel fuel system is our comparison point, which means our model will try to determine if a car is, or is not, a diesel fuelled car. 
 
