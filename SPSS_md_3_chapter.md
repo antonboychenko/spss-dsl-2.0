@@ -320,4 +320,4 @@ Our hypothesis might be:
 
 ## Final challenge - complete the course survey <a name = "survey"><a/>
 
-[Click this link to complete the survey](https://lse.eu.qualtrics.com/jfe/form/SV_eflc2yj4pcryc62?coursename=SPSS%203:%20Introduction%20to%20inferential%20statistics&topic=SPSS&link=&prog=SR&version=21-22&link2=)
+[Click this link to complete the survey](https://lse.eu.qualtrics.com/jfe/form/SV_ewXuHQ1nRnurTdY?coursename=SPSS%3:%Introduction%to%inferential%statistics&topic=SPSS&prog=SR&version=22-23&link=)

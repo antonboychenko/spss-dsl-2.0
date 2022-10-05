@@ -299,4 +299,4 @@ Now try to predict price if:
 
 ## Final challenge — complete the course survey
 
-[Click this link to complete the survey](https://lse.eu.qualtrics.com/jfe/form/SV_eflc2yj4pcryc62?coursename=SPSS%204:%20Regressions%20in%20SPSS&topic=SPSS&link=&prog=SR&version=21-22&link2=)
+[Click this link to complete the survey](https://lse.eu.qualtrics.com/jfe/form/SV_ewXuHQ1nRnurTdY?coursename=SPSS%4:%Regressions%in%SPSS&topic=SPSS&prog=SR&version=22-23&link=)

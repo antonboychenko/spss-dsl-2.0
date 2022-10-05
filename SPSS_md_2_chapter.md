@@ -148,4 +148,4 @@ Create a crosstab where columns use the variable called `gndr` - *Gender* and ro
 
 ## Final challenge - complete the course survey <a name = "survey"><a/>
 
-[Click this link to complete the survey](https://lse.eu.qualtrics.com/jfe/form/SV_eflc2yj4pcryc62?coursename=SPSS%202:%20Data%20Exploration&topic=SPSS&link=&prog=SR&version=21-22&link2=)
+[Click this link to complete the survey](https://lse.eu.qualtrics.com/jfe/form/SV_ewXuHQ1nRnurTdY?coursename=SPSS%2:%Data%Exploration&topic=SPSS&prog=SR&version=22-23&link=)

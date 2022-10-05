@@ -210,4 +210,4 @@ The final task! Using `SPSS -> Transform –> Compute Variable` create a new var
 
 ## Final challenge - complete the course survey <a name = "survey"><a/>
 
-[Click this link to complete the survey](https://lse.eu.qualtrics.com/jfe/form/SV_eflc2yj4pcryc62?coursename=SPSS%201:%20Foundations%20of%20Data%20Management&topic=SPSS&link=&prog=SR&version=21-22&link2=)
+[Click this link to complete the survey](https://lse.eu.qualtrics.com/jfe/form/SV_ewXuHQ1nRnurTdY?coursename=SPSS%1:%Foundations%of%Data%Management&topic=SPSS&prog=SR&version=22-23&link=)
